@@ -3,6 +3,7 @@
 # Sumário
 
 1. <a href="#api">API</a>
+2. <a href="#Nodejs-introducao">Node.js: Introducao</a>
 
 # <p id="api">API</p>
 
@@ -113,3 +114,39 @@ Principais códigos de status:
 ## Postman
 
 Forma simplificada de enviar uma requisição e receber um retorno.
+
+_Nota: todos os testes realizados abaixo fora feitos utilizando o endpoint:_ `http://devup.com.br/gotour/api/pacotes/`
+
+Exemplo: colletion.
+
+![alt text](./img/image6.png)
+
+Exemplo: retornando pacotes.
+
+![alt text](./img/image7.png)
+
+Exemplo: retornando um pacote.
+
+![alt text](./img/image8.png)
+
+Exemplo: criando um pacote.
+
+![alt text](./img/image9.png)
+
+Exemplo: alterando um pacote.
+
+![alt text](./img/image10.png)
+
+Exemplo: atualizando um pacote.
+
+![alt text](./img/image11.png)
+
+Exemplo: deletando um pacote.
+
+![alt text](./img/image12.png)
+
+# <a id="Nodejs-introducao">Node.js: Introducao</a>
+
+Plataforma server-side que permite criação de aplicações JS standalone, ou seja, que não depende de um navegador para a execução.
+
+_Nota: npm é o gerenciador de dependências que já vem instalado junto com o node._
