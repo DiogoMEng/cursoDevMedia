@@ -4,6 +4,8 @@
 
 1. <a href="#api">API</a>
 2. <a href="#Nodejs-introducao">Node.js: Introducao</a>
+3. <a href="#Nodejs-primeiro-projeto">Node.js: Primeiro Projeto</a>
+4. <a href="#Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
 
 # <p id="api">API</p>
 
@@ -150,3 +152,78 @@ Exemplo: deletando um pacote.
 Plataforma server-side que permite criação de aplicações JS standalone, ou seja, que não depende de um navegador para a execução.
 
 _Nota: npm é o gerenciador de dependências que já vem instalado junto com o node._
+
+- dependências podem ser bibliotecas externas necessárias para o funcionamento da aplicação.
+
+# <a id="Nodejs-primeiro-projeto">Node.js: Primeiro Projeto</a>
+
+_Nota: a comunicação entre o frontend e o backend se dá através de requisições e respostas._
+
+- requisição: caracterizada por ser um envio de pacotes para o backend.
+- resposta: também pode ser um pacote de dados, isto é, uma mensagem de sucesso ou falha.
+
+Protocolo HTTP - meio de comunicação onde trafegam requisições e respostas.
+
+- protocolo padrão para navegação na internet.
+
+## APIs
+
+Conjunto de padrões usados para a comunicação entre sistemas.
+
+![alt text](./img/image13.png)
+
+A API é uma interface que padroniza a comunicação entre as aplicações frontend e backend.
+
+- recebe os dados da requisição e envia ao backend.
+
+## Express.js
+
+Framework minimalista para Node.js e o seu objetivo é simples.
+
+## API REST
+
+![alt text](./img/image14.png)
+
+Principais diretrizes do REST:
+
+1. Protocolo HTTP.
+2. Verbos HTTP - GET, POST, PUT, PATCH, DELETE .
+3. Formato JSON - formato de dados universal compreendido por todas as tecnologias.
+
+Arquitetura da API RESt:
+
+1. Camada de dados - base de toda a aplicação.
+2. Camada de serviço - funções da aplicação.
+
+   - consome a camada de dados.
+
+3. Camada REST - requisições HTTP.
+   - consome a camada de serviço.
+
+# <a id="Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
+
+O principal objetivo do envio de parâmetros através das requisições e respostas
+é permitir a comunicação entre front-end e back-end.
+
+- recebimento de dados.
+
+## Recebendo Requisições na API com Express
+
+Os parâmetros são enviados via URL, e internamente serão convertidos para o formato
+JSON.
+
+Exemplo: recebendo parâmetros.
+![alt text](./img/image15.png)
+
+## Tratando Erros na API
+
+A validação evita que os dados inválidos cheguem até a API.
+
+_Nota: dados inválidos podem oferecer erros a API, assim como oferecer riscos de segurança ao sistema._
+
+Códigos de Status mais utilizados:
+
+1. 200 - requisição feita com sucesso.
+2. 400 - requisição inválida.
+3. 404 - Não encontrado.
+4. 500 - Erro interno de servidor.
