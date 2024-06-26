@@ -16,13 +16,12 @@ app.get('/', (req, res) => {
     let peso = req.query.peso;
     let altura = req.query.altura;
 
-    if(validaParametro(peso) && validaParametro(altura)){
+    if (validaParametro(peso) && validaParametro(altura)) {
         var imc = IMC.efetuarCalculoImc(peso, altura);
         var status = IMC.retornarStatusIMC(imc);
     } else {
-        res.status(400).json({'Erro': 'Peso ou altura inválidos.'})
+        res.status(400).json({ 'Erro': 'Peso ou altura inválidos.' })
     }
-
 
     // JSON - ENVIA AS RESPOSTAS PARA O FRONTEND COM OS DADOS EM FORMATO JSON
     res.json({
@@ -33,9 +32,10 @@ app.get('/', (req, res) => {
 
 app.get('/mensagemdia', (req, res) => {
     let dia = data.getDate();
+    console.log(data.getFullYear());
     let mensagemSelecionada = retornarMensagemDoDia(dia);
 
-    res.json({mensagem: mensagemSelecionada});
+    res.json({ mensagem: mensagemSelecionada });
 });
 
 // ### MONITOTAMENTO DE REQUISIÇÕES ATRAVÉS DA PORTA HTTP ###
