@@ -248,3 +248,16 @@ Domínio - contexto da coleção de dados.
 - um sistema pode possuir mais de um domínio.
 
 _OBS: dentro do padrão REST, sempre que houver manipulação de dados, uma coleção deve ter uma coluna de id._
+
+Método find() - permite buscar um item específico dentro uma coleção de dados.
+
+- recebe uma função de callback, que terá como parâmetro cada elemento da coleção.
+
+Exemplo: endpoint de busca em uma coleção de dados.
+`localhost:8080/ufs?parametro=valor`
+
+- ?: indique é uma busca.
+- parametro: parâmetro de busca.
+
+_OBS: uso dos espaços em buscas._
+![alt text](./img/image17.png)
