@@ -1,6 +1,6 @@
 const historicoInflacao = require('../data/dados');
-const { calculoIpca } = require('../services/calculoIpca.service');
-const { ipcaIdFind, ipcaYearFilter } = require('../services/ipcaFilter.service');
+const { ipcaCalculation } = require('../services/calculoIpca.service');
+const { ipcaIdFind, ipcaYearFilter, ipcaFilterByMonthAndYear } = require('../services/ipcaFilter.service');
 
 function returnsIpcaData(req, res){
     res.json(historicoInflacao)
@@ -15,23 +15,28 @@ function returnsIpcaDataYear(req, res){
 }
 
 function returnsIpcaDataId(req, res){
+    
     let id = parseInt(req.params.id);
 
     let idData = ipcaIdFind(historicoInflacao, id);
+
+    if(!idData) return res.status(404).json({err: 'Elemento não encontrado'});
 
     res.json(idData);
 }
 
 function returnsCalculoIpca(req, res){
-    let value = req.query.value;
-    let initialMonth = req.query.initialMonth;
-    let initialYear = req.query.initialYear;
-    let endMonth = req.query.endMonth;
-    let endYear = req.query.endYear;
+    const value = req.query.value;
+    const initialMonth = req.query.initialMonth;
+    const initialYear = req.query.initialYear;
+    const endMonth = req.query.endMonth;
+    const endYear = req.query.endYear;
 
-    let valorIpca = historicoInflacao.filter(dado => (dado.mes >= initialMonth && dado.mes <= endMonth) && (dado.ano >= initialYear && dado.ano <= endYear));
+    const ipcaValue = ipcaFilterByMonthAndYear(historicoInflacao, initialMonth, endMonth, initialYear, endYear)
 
-    res.json(valorIpca);
+    result = ipcaCalculation(value, ipcaValue);
+
+    res.json(result);
 }
 
 module.exports = { returnsIpcaData, returnsIpcaDataYear, returnsIpcaDataId, returnsCalculoIpca };
