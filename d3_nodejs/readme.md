@@ -7,6 +7,7 @@
 3. <a href="#Nodejs-primeiro-projeto">Node.js: Primeiro Projeto</a>
 4. <a href="#Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
 5. <a href="#api-restful-colecao-dados">Node.js: APIs RESTful e Coleção de Dados</a>
+6. <a href="#publicando-api-internet">Node.js: Publicando API na Internet</a>
 
 # <p id="api">API</p>
 
@@ -248,3 +249,21 @@ Domínio - contexto da coleção de dados.
 - um sistema pode possuir mais de um domínio.
 
 _OBS: dentro do padrão REST, sempre que houver manipulação de dados, uma coleção deve ter uma coluna de id._
+
+<p id="publicando-api-internet">Node.js: Publicando API na Internet</p>
+
+Nomenclaturas:
+
+1. Maquina local = Ambiente de desenvolvimento.
+2. Endereço público = ambiente do produção.
+
+Tipos de APIs:
+
+1. públicas - acessíveis para qualquer aplicação.
+2. privadas - necessitam de autenticação para serem consumidas.
+
+Para publicar uma API na internet é necessário hospedar o seu código em um servidor, para isso é utilizado um provedor de hospedagem.
+
+- provedor de hospedagem: serviço que disponibiliza um servidor.
+
+![alt text](./img/image17.png)
