@@ -250,7 +250,19 @@ Domínio - contexto da coleção de dados.
 
 _OBS: dentro do padrão REST, sempre que houver manipulação de dados, uma coleção deve ter uma coluna de id._
 
-<p id="publicando-api-internet">Node.js: Publicando API na Internet</p>
+Método find() - permite buscar um item específico dentro uma coleção de dados.
+
+- recebe uma função de callback, que terá como parâmetro cada elemento da coleção.
+
+Exemplo: endpoint de busca em uma coleção de dados.
+`localhost:8080/ufs?parametro=valor`
+
+- ?: indique é uma busca.
+- parametro: parâmetro de busca.
+
+_OBS: uso dos espaços em buscas._
+
+# <p id="publicando-api-internet">Node.js: Publicando API na Internet</p>
 
 Nomenclaturas:
 
