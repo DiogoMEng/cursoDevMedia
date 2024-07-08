@@ -279,3 +279,37 @@ Para publicar uma API na internet é necessário hospedar o seu código em um se
 - provedor de hospedagem: serviço que disponibiliza um servidor.
 
 ![alt text](./img/image17.png)
+
+## Hospedagem no Render
+
+Etapas:
+
+1. selecionar Web Services > configure account.
+2. selecionar repositorio > clique em connect.
+3. informe nome > region, branch, root directory deixar padrão.
+4. selecione Node como runtime > build command deixar padrão.
+5. start command informar comando de inicialização definido em máquina local.
+6. selecionar plano > fim.
+
+## Hospedagem no Azure
+
+Plataforma de hospedagem em nuvem da microsoft.
+
+Etapas plano assinatura:
+
+1. Assinaturas > clique em adicionar.
+2. selecionar plano: microsoft azure plan > finalizar.
+
+Etapas Grupos e Recursos: local onde a API será armazenada.
+
+1. na página inicial, procurar por Grupos de Recursos > clique em criar.
+2. preencha os campos da mesma forma que a imagem a baixo > clique em revisar + criar > finalizar.
+
+![alt text](./img/image18.png)
+
+Etapas Serviços de Aplicativos:
+
+1. na página inicial, procurar por Serviços de Aplicativos > clique em criar, e em seguida aplicativo web.
+2. preencha os campos da mesma forma que a imagem a baixo > clique em revisar + criar > finalizar.
+
+![alt text](./img/image19.png)
