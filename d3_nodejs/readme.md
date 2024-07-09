@@ -313,3 +313,11 @@ Etapas Serviços de Aplicativos:
 2. preencha os campos da mesma forma que a imagem a baixo > clique em revisar + criar > finalizar.
 
 ![alt text](./img/image19.png)
+
+Etapas Extensão Azure Visual Studio:
+
+1. instalar Azure App Service > realizar login.
+2. vá na extensão > acesse o plano criado.
+3. procure app services > com o botão direito, clique em no grupo e recursos criado (ex: apihistoricoipca).
+4. selecione a opção deploy to web app > selecione a pasta do projeto de api.
+5. aguarda finalização de upload > clique em browse website.
