@@ -1,6 +1,6 @@
-<h1 style="font-size: 50px; text-align: center">NodeJS</h1>
+# NodeJS
 
-# Sumário
+## Sumário
 
 1. <a href="#api">API</a>
 2. <a href="#Nodejs-introducao">Node.js: Introducao</a>
@@ -8,8 +8,9 @@
 4. <a href="#Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
 5. <a href="#api-restful-colecao-dados">Node.js: APIs RESTful e Coleção de Dados</a>
 6. <a href="#publicando-api-internet">Node.js: Publicando API na Internet</a>
+7. <a href="#api-banco-dados">Node.js: APIs e Bancos de Dados</a>
 
-# <p id="api">API</p>
+## <p id="api">API</p>
 
 API - Application Programming Interface.
 
@@ -21,7 +22,7 @@ API - Application Programming Interface.
 
 _Nota: integração de sistemas é uma forma de conectar sistemas para que trabalhem juntos._
 
-## Padrão REST
+### Padrão REST
 
 Mais utilizada dentro do mercado, se comunicando com o front-end através da linguagem padrão REST.
 
@@ -34,7 +35,7 @@ Padrão REST:
 3. JSON.
 4. Códigos de Status.
 
-## Endpoint
+### Endpoint
 
 URLs que são disponibilizados pelo back-end para que o front possa acessar as funções
 criadas no back-end.
@@ -64,7 +65,7 @@ Exemplo: Endpoint para manipulação de dados.
 
 _OBS: normalmente o uso do parâmetro se dá com intuito de manipular um registro específico._
 
-## Verbos HTTP
+### Verbos HTTP
 
 _Nota: o front-end pode enviar informações para back-end por meio de verbos HTTP e conteúdos JSON._
 
@@ -79,7 +80,7 @@ Formas de Consumir uma API com HTTP:
 
 ![alt text](./img/image2.png)
 
-## JSON
+### JSON
 
 Normalmente é utilizado o formato de dados JSON no padrão REST.
 
@@ -97,7 +98,7 @@ O formato JSON aceita 3 tipos de valores, que são: textos, valores numéricos e
 
 ![alt text](./img/image3.png)
 
-## Código de Status
+### Código de Status
 
 Código enviado junto com a resposta que indica o status da requisição.
 
@@ -115,7 +116,7 @@ Significado de cada categoria:
 Principais códigos de status:
 ![alt text](./img/image5.png)
 
-## Postman
+### Postman
 
 Forma simplificada de enviar uma requisição e receber um retorno.
 
@@ -149,7 +150,7 @@ Exemplo: deletando um pacote.
 
 ![alt text](./img/image12.png)
 
-# <a id="Nodejs-introducao">Node.js: Introducao</a>
+## <a id="Nodejs-introducao">Node.js: Introducao</a>
 
 Plataforma server-side que permite criação de aplicações JS standalone, ou seja, que não depende de um navegador para a execução.
 
@@ -157,7 +158,7 @@ _Nota: npm é o gerenciador de dependências que já vem instalado junto com o n
 
 - dependências podem ser bibliotecas externas necessárias para o funcionamento da aplicação.
 
-# <a id="Nodejs-primeiro-projeto">Node.js: Primeiro Projeto</a>
+## <a id="Nodejs-primeiro-projeto">Node.js: Primeiro Projeto</a>
 
 _Nota: a comunicação entre o frontend e o backend se dá através de requisições e respostas._
 
@@ -168,7 +169,7 @@ Protocolo HTTP - meio de comunicação onde trafegam requisições e respostas.
 
 - protocolo padrão para navegação na internet.
 
-## APIs
+### APIs
 
 Conjunto de padrões usados para a comunicação entre sistemas.
 
@@ -178,11 +179,11 @@ A API é uma interface que padroniza a comunicação entre as aplicações front
 
 - recebe os dados da requisição e envia ao backend.
 
-## Express.js
+### Express.js
 
 Framework minimalista para Node.js e o seu objetivo é simples.
 
-## API REST
+### API REST
 
 ![alt text](./img/image14.png)
 
@@ -202,14 +203,14 @@ Arquitetura da API RESt:
 3. Camada REST - requisições HTTP.
    - consome a camada de serviço.
 
-# <a id="Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
+## <a id="Nodejs-recebendo-parametros">Node.js: Recebendo Parâmetros</a>
 
 O principal objetivo do envio de parâmetros através das requisições e respostas
 é permitir a comunicação entre front-end e back-end.
 
 - recebimento de dados.
 
-## Recebendo Requisições na API com Express
+### Recebendo Requisições na API com Express
 
 Os parâmetros são enviados via URL, e internamente serão convertidos para o formato
 JSON.
@@ -217,7 +218,7 @@ JSON.
 Exemplo: recebendo parâmetros.
 ![alt text](./img/image15.png)
 
-## Tratando Erros na API
+### Tratando Erros na API
 
 A validação evita que os dados inválidos cheguem até a API.
 
@@ -230,7 +231,7 @@ Códigos de Status mais utilizados:
 3. 404 - Não encontrado.
 4. 500 - Erro interno de servidor.
 
-# <p id="api-restful-colecao-dados">Node.js: APIs RESTful e Coleção de Dados</p>
+## <p id="api-restful-colecao-dados">Node.js: APIs RESTful e Coleção de Dados</p>
 
 Relembrando:
 
@@ -262,7 +263,7 @@ Exemplo: endpoint de busca em uma coleção de dados.
 
 _OBS: uso dos espaços em buscas._
 
-# <p id="publicando-api-internet">Node.js: Publicando API na Internet</p>
+## <p id="publicando-api-internet">Node.js: Publicando API na Internet</p>
 
 Nomenclaturas:
 
@@ -280,7 +281,7 @@ Para publicar uma API na internet é necessário hospedar o seu código em um se
 
 ![alt text](./img/image17.png)
 
-## Hospedagem no Render
+### Hospedagem no Render
 
 Etapas:
 
@@ -291,7 +292,7 @@ Etapas:
 5. start command informar comando de inicialização definido em máquina local.
 6. selecionar plano > fim.
 
-## Hospedagem no Azure
+### Hospedagem no Azure
 
 Plataforma de hospedagem em nuvem da microsoft.
 
@@ -321,3 +322,5 @@ Etapas Extensão Azure Visual Studio:
 3. procure app services > com o botão direito, clique em no grupo e recursos criado (ex: apihistoricoipca).
 4. selecione a opção deploy to web app > selecione a pasta do projeto de api.
 5. aguarda finalização de upload > clique em browse website.
+
+## <p href="#api-banco-dados">Node.js: APIs e Bancos de Dados</p>

@@ -4,6 +4,8 @@
 
 1. <a href="#introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</a>
 2. <a href="#introducao-linguagem-sql">Introdução a Linguagem SQL</a>
+3. <a href="#comando-select">Linguagem SQL: Comando Select</a>
+4. <a href="#clausula-where">Linguagem SQL: Cláusula WHERE</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -36,6 +38,9 @@ _Nota: o InnoDB sempre será indicado para base de dados que sofreram bastante a
 
 ![alt text](img/image2.png)
 
+Exemplo: Criação de tabela.</br>
+![alt text](img/image12.png)
+
 Condigurações de Campos:
 
 1. column Name - nome de uma coluna.
@@ -61,6 +66,9 @@ Comandos SQL:
 ### Criação de Índices
 
 ![alt text](img/image5.png)
+
+Exemplo: Criando um index.</br>
+![alt text](img/image11.png)
 
 Exemplo: deletando um index.</br>
 ![alt text](img/image6.png)
@@ -195,3 +203,74 @@ SELECT * FROM nameTable WHERE nameColumn = value; -- Retorna todas as colunas da
 SELECT * FROM nameTable1 t1
    JOIN nameTable2 t2 ON t1.id = t2.id; -- Retorna todas as colunas da tabela que corresponde a união.
 ```
+
+## <p id="comando-select">Linguagem SQL: Comando Select</p>
+
+Exemplo: Buscando dados do cliente.</br>
+![alt text](img/image13.png)
+
+![alt text](img/image14.png)
+
+Clásula Where - permite filtrar os registros nas consultas.
+
+Exemplo:</br>
+![alt text](img/image15.png)
+
+Operadores de Where:
+
+1. `LIKE` - busca determinada string dentro de um campo de valores textuais.
+   - ![alt text](img/image16.png)
+   - " % " funciona como um coringa que pode ser qualquer valor.
+   - " \_ " busca por um termo em uma posição específica.
+2. `IN` - filtra o valor de um dos campos de uma tabela a partir de uma lista e possibilidades.
+   - verifica se o valor de um campo se encontra em uma lista.
+   - ![alt text](img/image17.png)
+3. `AND, OR, NOT`.
+
+### DISTINCT
+
+Utilizado para eliminar consultas que possuem registros repetidos.
+
+Exemplo:</br>
+![alt text](img/image18.png)
+
+### TOP
+
+Especifica o número de linhas que devem ser retornadas no resultado da consulta.
+
+_OBS: recurso não disponível para todos os SGBDS._
+
+- MySQL - LIMIT.
+- Oracle - ROWNUM.
+- Firebird - FIRST.
+
+_Nota: utilizado normalmente com ORDER BY._
+
+Exemplo: Utilizando a sintaxe para MySQL.</br>
+![alt text](img/image19.png)
+
+Exemplo: Ordenando o resultado.</br>
+![alt text](img/image20.png)
+
+Exemplo:
+
+```
+SELECT * FROM alunos
+   ORDER BY nome DESC
+   LIMIT 3
+   OFFSET 1;
+```
+
+- `OFFSET`: omite o primeiro resultado.
+
+<p id="clausula-where">Linguagem SQL: Cláusula WHERE</p>
+
+Operador `BETWEEN` - permite realizar uma consulta entre uma determinada faixa de valores.
+
+Exemplo:
+
+```
+SELECT * FROM clientes WHERE id BETWEEN 2 AND 4;
+```
+
+- pode ser utilizado para verificar intervalos de datas, caracteres e outros.
