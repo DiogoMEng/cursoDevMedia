@@ -48,7 +48,7 @@ Exemplo: Endpoint para funções.
   2. função: executada no backend.
   3. valor: valor usado no função.
 
-![alt text](./img/image.png)
+![alt text](./img/image1.png)
 
 Exemplo: Endpoint para manipulação de dados.
 `https://dominio.com.br/dados/parametro`
@@ -324,3 +324,94 @@ Etapas Extensão Azure Visual Studio:
 5. aguarda finalização de upload > clique em browse website.
 
 ## <p href="#api-banco-dados">Node.js: APIs e Bancos de Dados</p>
+
+Com o banco de dados, os dados poderão ser modificados sem que a API precise ser atualizada.
+
+_Nota: diminuir a dependência aumenta a qualidade do sistema._
+
+_Nota: bancos de dados do tipo relacional trabalha com os dados em formato de tabelas, assim como uma planilha. Contudo, ainda a banco de dados que lidam com objetos com objetos como o MongoDB._
+
+No modelo relacional em base de dados, as colunas podem ser referidas como os campos de uma tabela.
+
+Dados normalizados - os dados estão normalizados quando eles não se repetem em uma tabela do banco de dados.
+
+- quando os dados estão em formato de objetos não há problema quanto a repetição.
+- para cada conjunto de dados repetidos, deve-se criar uma nova tabela.
+
+_OBS: O MySQL é um servidor, servirá de ponte entre o sistema e o banco de dados._
+
+### Instalação MySQL
+
+1. realizar instalação do arquivo no site https://dev.mysql.com/downloads/installer/.
+2. em "Choosing a setup type", selecione: Full > Selecione uma pasta de instalação.
+3. clique em execute > em "Accounts and Roles", crie uma senha (ex: root).
+4. clique em next > em "Connect to Server", insira a senha criada previamente e teste a conexão.
+5. continue o processo > em "Installation Complete", clique em finish.
+
+### Criação de Banco de Dados
+
+Exemplo: criando pelo Workbench.
+
+```
+CREATE DATABASE libertadoresDB
+```
+
+Em ambientes de produção é importante que cada banco de dados tenha sua própria senha de acesso, caso contrário, isso seria uma grande falha de segurança.
+
+Exemplo: comandos de acesso.
+
+```
+SELECT CURRENT_USER() -- retorna o usuário local
+
+CREATE USER novousuario IDENTIFIED BY 'novosenha' -- crie um novo usuário e senha
+
+GRANT ALL PRIVILEGES ON novoprojetodb TO novousuario -- dá privilégios de acesso ao usuário
+```
+
+- por padrão, novos usuário não tem privilégios para acessar nenhuma base de dados.
+
+### Criação de Tabela
+
+Exemplo: criando tabela de campeonato.
+
+```
+CREATE TABLE Campeonatos (
+	id INTEGER,
+    campeao VARCHAR(35),
+    vice VARCHAR(35),
+    ano INTEGER
+);
+
+ALTER TABLE campeonatos MODIFY id INT AUTO_INCREMENT PRIMARY KEY; -- modifica a coluna id e a transforma em uma chave primária
+```
+
+_Nota: um índice otimiza o acesso aos dados da tabela._
+
+- garante uma maior performance.
+
+### Inserindo Dados na Tabela
+
+Exemplo:
+
+```
+INSERT INTO campeonatos (campeao, vice, ano)
+	VALUES ("Boca Junior", "Palmeiras", 2000);
+```
+
+### API e Banco de Dados
+
+A biblioteca `mysql2` possui duas formas de conexão: `createConnection`, onde a conexão é gerenciada manualmente pelo programador; e `createPool`, que é uma conexão gerenciada automáticamente.
+
+- conexões manuais devem abertas e fechadas manualmente.
+- conexões automáticas economizam recursos ao reaproveitar as conexões criadas.
+
+Exemplo: conexão createConnection.
+![alt text](img/image20.png)
+
+- uma nova conexão será criada sempre que API for acessada.
+- banco de dados somente acessado através de uma conexão aberta.
+
+Exemplo: conexão createPool.
+![alt text](img/image21.png)
+
+- indicado para APIs com muitas requisições ao banco.

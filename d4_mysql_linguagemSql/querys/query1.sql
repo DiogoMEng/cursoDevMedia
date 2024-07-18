@@ -18,3 +18,6 @@ CREATE TABLE `telefoneclientes` (
   KEY `FK_Cliente_idx` (`idcliente`),
   CONSTRAINT `FK_cliente` FOREIGN KEY (`idcliente`) REFERENCES `clientes` (`idclientes`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+
+
