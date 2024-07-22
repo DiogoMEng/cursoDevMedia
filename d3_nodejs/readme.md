@@ -415,3 +415,25 @@ Exemplo: conexão createPool.
 ![alt text](img/image21.png)
 
 - indicado para APIs com muitas requisições ao banco.
+
+_Nota: pool é o local onde estão armazenadas as conexões disponíveis para serem buscadas._
+
+Métodos de createPool:
+
+1. getConnection() - busca no pool uma nova conexão para usar, caso não ache, uma nova conexão será criada.
+
+### Async e Await
+
+Recursos utilizados para tratamento de operações assíncronas.
+
+Operações Assíncrona:
+
+- possui tempo de resposta desconhecido.
+- executada paralelamente a outras operações, ou seja, está tipo de função não impede a execução de outra parte do código.
+- não impedem a execução do restante do código.
+
+_Nota: operações síncronas são executadas na ordem._
+
+Await - interrompe momentâneamente a execução do código até que operações assíncrona seja concluída.
+
+- quando usado dentro de função, a mesma deve receber a palavra async.
