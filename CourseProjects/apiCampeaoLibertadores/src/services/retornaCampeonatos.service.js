@@ -30,3 +30,13 @@ export async function retornaCampeonatosAno(ano) {
 
     return champion;
 }
+
+export async function retornaCampeonatosTime(time) {
+    const champion_data = await conn.query('SELECT id, campeao, vice, ano FROM campeonatos WHERE campeao = "' + time + '"');
+
+    const champion = champion_data[0];
+
+    conn.release();
+
+    return champion;
+}
