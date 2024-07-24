@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Pediatria</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/consome.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", DomContentLoaded);
+
+        function DomContentLoaded() {
+            const tabelaMedicos = document.querySelector('#tabelaMedicos tbody');
+            listaMedicos(tabelaMedicos)
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <span>Clinica de Pediatria</span>
+    </header>
+    <main>
+        <h2>Lista de Médicos</h2>
+        <table border="1" id="tabelaMedicos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-Mail</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <span>Todos os direitos reservados - 2024</span>
+    </footer>
+</body>
+</html>

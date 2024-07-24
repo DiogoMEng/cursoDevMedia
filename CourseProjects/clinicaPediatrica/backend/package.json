@@ -1,0 +1,22 @@
+{
+  "name": "projetolistagemcontatos",
+  "version": "1.0.0",
+  "description": "O projeto visa lista os contatos de médicos de uma clínica de pediatria, que estão armazenados em um banco de dados. A API pode ser utilizada de forma prática em diversos tipos de sistemas, tais como aplicativos mobiles, sistemas backoffice e páginas web.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
