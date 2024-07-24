@@ -22,4 +22,4 @@ O projeto visa lista os contatos de médicos de uma clínica de pediatria, que e
 
 ## Status do Projeto
 
-<img alt="projectstatus" src="https://img.shields.io/badge/Status do Projeto-Em Desenvolvimento-orange">
+<img alt="projectstatus" src="https://img.shields.io/badge/Status do Projeto-Em Desenvolvimento-gree">
