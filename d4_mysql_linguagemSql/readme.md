@@ -6,6 +6,11 @@
 2. <a href="#introducao-linguagem-sql">Introdução a Linguagem SQL</a>
 3. <a href="#comando-select">Linguagem SQL: Comando Select</a>
 4. <a href="#clausula-where">Linguagem SQL: Cláusula WHERE</a>
+5. <a href="#insert">Linguagem SQL: INSERT</a>
+6. <a href="#update">Linguagem SQL: UPDATE</a>
+7. <a href="#delete">Linguagem SQL: DELETE</a>
+8. <a href="#like">Linguagem SQL: Like</a>
+9. <a href="#in">Linguagem SQL: IN</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -263,7 +268,7 @@ SELECT * FROM alunos
 
 - `OFFSET`: omite o primeiro resultado.
 
-<p id="clausula-where">Linguagem SQL: Cláusula WHERE</p>
+## <p id="clausula-where">Linguagem SQL: Cláusula WHERE</p>
 
 Operador `BETWEEN` - permite realizar uma consulta entre uma determinada faixa de valores.
 
@@ -274,3 +279,134 @@ SELECT * FROM clientes WHERE id BETWEEN 2 AND 4;
 ```
 
 - pode ser utilizado para verificar intervalos de datas, caracteres e outros.
+
+## <p id="insert">Linguagem SQL: INSERT</p>
+
+Responsável pelo inserção de uma ou mais linhas em uma tabela.
+
+Exemplo:
+
+```
+INSERT INTO
+   table
+   (column1, column2, ...)
+   VALUES
+      (value1, value2, ...),
+      ( ... )
+```
+
+Exemplo: inserindo valores pelo select.
+
+```
+INSERT INTO
+   table
+   (column1, column2, ...)
+   (SELECT value1, value2, ... FROM table),
+```
+
+## <p id="update">Linguagem SQL: UPDATE</p>
+
+Permite a alteração de um ou mais dados armazenados na tabela.
+
+Exemplo:
+
+```
+UPDATE
+   table
+SET
+   column = 'new value'
+WHERE
+   column = value -- condição para não alterar todos os campos
+```
+
+## <p id="delete">Linguagem SQL: DELETE</p>
+
+Permite que uma ou mais linhas sejam excluidas de uma tabela.
+
+Exemplo:
+
+```
+DELETE FROM
+   table
+   WHERE
+   column = value -- condição para um único valor
+```
+
+_OBS: sempre deve ser utilizado WHERE para que não seja excluido todos os campos de uma tabela._
+
+## <p id="exists">Linguagem SQL: Exists</p>
+
+Testa quando há um ou mais resultados em uma subquery, e retorna um valor true, permite filtrar colunas dentro de uma subconsulta.
+
+- aplicada quando se deseja trazer um resultado onde seu valor existe em outra tabela.
+
+Exemplo:
+
+```
+SELECT
+   column1, column2, ...
+   FROM
+      table1, table2, ...
+   WHERE
+      EXISTS (
+         SELECT
+            column1, column2, ...
+         FROM
+            table1, table2, ...
+         WHERE
+            condition
+      )
+```
+
+## <p id="like">Linguagem SQL: Like</p>
+
+Busca por padrões de textos em uma coluna, de forma semelhante a expressão regulares.
+
+Exemplo:
+
+```
+SELECT
+   column1, column2
+   FROM
+      table1, table2,
+   WHERE
+      table1.column1 LIKE caracteres
+```
+
+- operadores: " % " (0 ou mais de um caracteres de texto) e " \_ " (1 caractere).
+
+## <p id="IN">Linguagem SQL: IN</p>
+
+Operador usado para especificar vários valores em uma clásula WHERE.
+
+- verifica se determinada coluna está sendo mencioanda em um grupo de valores.
+
+Exemplo:
+
+```
+SELECT
+   column1, column2, ...
+   FROM
+      table1, ...
+   WHERE
+      column IN [value1, value2, value3, ...]
+```
+
+## <p id="Order By">Linguagem SQL: Order By</p>
+
+Solicita a ordenação dos dados no comando select.
+
+Exemplo:
+
+```
+SELECT
+   columns
+   FROM
+      tables
+   WHERE
+      conditions
+   ORDER BY
+      column or columns
+```
+
+- ASC ou DESC, para ordenação crescente ou descrescente respectivamente.

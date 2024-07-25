@@ -34,3 +34,16 @@ Recursos do docker:
 Cloud Native - aplicaçãoes pensadas para funcionar em nuvem.
 
 _Nota: uma boa prática dentro do docker é criar um container para cada serviço existente dentro da aplicação (ex: banco de dados, apache, redis)._
+
+Exemplo: comando para construir a imagem. </br>
+`docker build -t name_container`
+
+- -t: permite nomear o container.
+
+Exemplo: comando para visualizar as imagens presentes na máquina.</br>
+`docker image ls`
+
+Exemplo: comando para subir o container para execução.</br>
+`docker run -p 8080:80 meu_container`
+
+- -p: permite o acesso a uma porta do container.
