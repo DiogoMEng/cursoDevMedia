@@ -11,6 +11,7 @@
 7. <a href="#delete">Linguagem SQL: DELETE</a>
 8. <a href="#like">Linguagem SQL: Like</a>
 9. <a href="#in">Linguagem SQL: IN</a>
+10. <a href="#order-by">Linguagem SQL: Order By</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -375,7 +376,7 @@ SELECT
 
 - operadores: " % " (0 ou mais de um caracteres de texto) e " \_ " (1 caractere).
 
-## <p id="IN">Linguagem SQL: IN</p>
+## <p id="in">Linguagem SQL: IN</p>
 
 Operador usado para especificar vários valores em uma clásula WHERE.
 
@@ -392,7 +393,7 @@ SELECT
       column IN [value1, value2, value3, ...]
 ```
 
-## <p id="Order By">Linguagem SQL: Order By</p>
+## <p id="order-by">Linguagem SQL: Order By</p>
 
 Solicita a ordenação dos dados no comando select.
 
