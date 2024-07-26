@@ -12,6 +12,10 @@
 8. <a href="#like">Linguagem SQL: Like</a>
 9. <a href="#in">Linguagem SQL: IN</a>
 10. <a href="#order-by">Linguagem SQL: Order By</a>
+11. <a href="#funcao-agregacao">Linguagem SQL: Funções de Agregação</a>
+12. <a href="#agrupamento-dados">Linguagem SQL: Agrupamento de Dados</a>
+13. <a href="#juncao-tabela">Linguagem SQL: Junção de Tabela</a>
+14. <a href="#juncao-tabela">Linguagem SQL: União de Consultas</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -411,3 +415,93 @@ SELECT
 ```
 
 - ASC ou DESC, para ordenação crescente ou descrescente respectivamente.
+
+## <p id="funcao-agregacao">Linguagem SQL: Funções de Agregação</p>
+
+SUM - função de soma.</br>
+`SELECT SUM(column) FROM table WHERE condition`
+
+AVG - função de média.</br>
+`SELECT AVG(column) FROM table WHERE condition`
+
+MAX/MIN - funções que retornam os valores máximos e mínimos.</br>
+`SELECT MAX(column) FROM table WHERE condition`
+`SELECT MIN(column) FROM table WHERE condition`
+
+COUNT - função que conta os registros da tabela.
+`SELECT COUNT(*) FROM table WHERE condition`
+
+- por padrão está função descarta valores nulos.
+
+## <p id="agrupamento-dados">Linguagem SQL: Agrupamento de Dados</p>
+
+GROUP BY - realiza o agrupamento dos dados que possuem os mesmo valores.
+
+Exemplo:
+
+```
+SELECT data_venda FROM vendas GROUP BY data_venda
+```
+
+- agrupa todos os valores pela data.
+
+Exemplo: retornando somatorio de quantidade acima de 3.
+
+```
+SELECT data_venda, SUM(quantidade)
+   FROM vendas
+   WHERE codigo_produto = 200
+   GROUP BY data_venda
+   HAVING SUM(quantidade) > 3 -- retorna somente a soma daqueles maiores que 3
+```
+
+## <p id="juncao-tabela">Linguagem SQL: Junção de Tabela</p>
+
+INNER JOIN - trás os dados de uma tabela1 relacionados com outra tabela2, desde que haja um correspondente em ambas as tabelas.
+
+```
+SELECT
+   t1.column1,
+   t1.column2,
+   t2.column1,
+   t2.column2
+   FROM tabela1 AS t1
+      INNER JOIN tabela2 AS t2 ON t1.column1 = t2.column1
+```
+
+LEFT JOIN - registra todos os dados da tabela a esquerda mesmo que não existe na tabela a direita.
+
+- RIGHT JOIN - realiza o processo inverso.
+
+```
+SELECT
+   t1.column1,
+   t1.column2,
+   t2.column1,
+   t2.column2
+   FROM tabela1 AS t1
+      LEFT JOIN tabela2 AS t2 ON t1.column1 = t2.column1
+```
+
+- no exemplo acima a tabela1 está a esquerda, e a tabela2 está a direita.
+
+## <p id="uniao-consultas">Linguagem SQL: União de Consultas</p>
+
+Uniao entre duas consultas distintas para retornar apenas um único resultado.
+
+- os registros que forem iguais serão ignorados.
+
+Exemplo:
+
+```
+SELECT column1, column2, column3 FROM table1
+UNION
+SELECT column1, column2, column3 FROM table2
+
+# RETORNA TODOS OS REGISTROS
+SELECT column1, column2, column3 FROM table1
+UNION ALL
+SELECT column1, column2, column3 FROM table2
+```
+
+_OBS: as colunas de ambas as consultas devem está na mesma sequência para realizar a união._
