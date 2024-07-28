@@ -16,6 +16,8 @@
 12. <a href="#agrupamento-dados">Linguagem SQL: Agrupamento de Dados</a>
 13. <a href="#juncao-tabela">Linguagem SQL: Junção de Tabela</a>
 14. <a href="#juncao-tabela">Linguagem SQL: União de Consultas</a>
+15. <a href="#data">Linguagem SQL: Data</a>
+16. <a href="#operador-intersect">Linguagem SQL: Operador Intersect</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -457,6 +459,8 @@ SELECT data_venda, SUM(quantidade)
 
 ## <p id="juncao-tabela">Linguagem SQL: Junção de Tabela</p>
 
+![alt text](img/image21.png)
+
 INNER JOIN - trás os dados de uma tabela1 relacionados com outra tabela2, desde que haja um correspondente em ambas as tabelas.
 
 ```
@@ -485,6 +489,18 @@ SELECT
 
 - no exemplo acima a tabela1 está a esquerda, e a tabela2 está a direita.
 
+OUTER JOIN - retorna todos os registros que estão presentes em duas tabelas distintas.
+
+```
+SELECT
+   t1.column1,
+   t1.column2,
+   t2.column1,
+   t2.column2
+   FROM tabela1 AS t1
+      OUTER JOIN tabela2 AS t2 ON t1.column1 = t2.column1
+```
+
 ## <p id="uniao-consultas">Linguagem SQL: União de Consultas</p>
 
 Uniao entre duas consultas distintas para retornar apenas um único resultado.
@@ -505,3 +521,68 @@ SELECT column1, column2, column3 FROM table2
 ```
 
 _OBS: as colunas de ambas as consultas devem está na mesma sequência para realizar a união._
+
+_Nota: os SGBDs não permitem que ORDER BY seja aplicado em queries que ainda serão unidas._
+
+## <p id="data">Linguagem SQL: Data</p>
+
+Fornece funções que permitem trabalhar com informações do tipo Date.
+
+Exemplo:
+
+```
+SELECT DAY(tabela1.column1) FROM tabela1
+
+SELECT MONTH(tabela1.column1) FROM tabela1
+
+SELECT YEAR(tabela1.column1) FROM tabela1
+```
+
+Exemplo: retorna os meses mais lucrativos do ano.
+
+```
+SELECT
+   MONTH(v.data) AS mes,
+   SUM(v.valor) AS total_recebido
+   FROM
+      vendo_produto v
+   GROUP BY mes
+   ORDER BY total_recebido DESC
+   LIMIT 0, 2
+```
+
+## <p id="operador-intersect">Linguagem SQL: Operador Intersect</p>
+
+Retorna os resultados que estão presentes em dois conjuntos.
+
+Exemplo:
+
+```
+SELECT
+   column1
+   FROM
+   table1
+INTERSECT
+SELECT
+   column2
+   FROM
+   table2
+```
+
+## <p id="operador-minus">Linguagem SQL: Operador Minus</p>
+
+Realiza a operação de subtração entre duas queries.
+
+Exemplo:
+
+```
+SELECT
+   column1
+   FROM
+   table1
+MINUS
+SELECT
+   column2
+   FROM
+   table2
+```

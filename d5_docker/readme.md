@@ -3,6 +3,7 @@
 ## Sumário
 
 1. <a href="#introducao-docker">Docker: Introdução</a>
+2. <a href="#construcao-docker">Docker: Construção</a>
 
 ## <p id="introducao-docker">Docker: Introdução</p>
 
@@ -36,7 +37,7 @@ Cloud Native - aplicaçãoes pensadas para funcionar em nuvem.
 _Nota: uma boa prática dentro do docker é criar um container para cada serviço existente dentro da aplicação (ex: banco de dados, apache, redis)._
 
 Exemplo: comando para construir a imagem. </br>
-`docker build -t name_container`
+`docker build -t name_container .`
 
 - -t: permite nomear o container.
 
@@ -47,3 +48,25 @@ Exemplo: comando para subir o container para execução.</br>
 `docker run -p 8080:80 meu_container`
 
 - -p: permite o acesso a uma porta do container.
+
+## <p id="construcao-docker">Docker: Construção</p>
+
+Tipos comuns de instrução Dockerfile:
+
+1. `FROM image` - base para imagem.
+2. `RUN command` - executa comando sobre a imagem atual.
+3. `WORKDIR directory` - define diretório de trabalho.
+4. `COPY src dest` - copia arquivos ou diretórios locais para o container.
+5. `CMD command` - define programa padrão quando o container é iniciado.
+
+_OBS: cada Dockerfile possui um único CMD._
+
+_Nata: quando houver necessidade de mais de um Dockerfile, utilize esse formato filename.Dockerfile_
+
+- `--file`: utilizado em docker build para especificar o arquivo docker file.
+
+### Sintaxe
+
+`# syntax=docker/dockerfile:1` - instrui sobre a sintaxe que será usada ao analisar o dockerfile.
+
+CONTINUER DE - COMENTÁRIOS

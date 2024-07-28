@@ -1,18 +1,12 @@
 # ESPECIFICA A IMAGEM QUE SERÁ USADA
 # FROM imagem:version
-FROM node:16.14-alpine
+FROM node:22-alpine3.20
 
 # DEFINE DIRETÓRIO DE TRABALHO DENTRO DO CONTAINER
 WORKDIR /cursoDocker
 
-COPY package* .
-
 # INSTALA OS PACOTES LISTADOS
-# -- comando de compilação dentro da imagem base
-RUN npm install
+RUN npm i
 
-COPY . .
-
-ENTRYPOINT [ "npm", "run" ]
 # CMD - primeiro comando executado
-CMD [ "dev" ]
+CMD ["npm", "run", "dev"]
