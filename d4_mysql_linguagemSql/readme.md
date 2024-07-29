@@ -18,6 +18,8 @@
 14. <a href="#juncao-tabela">Linguagem SQL: União de Consultas</a>
 15. <a href="#data">Linguagem SQL: Data</a>
 16. <a href="#operador-intersect">Linguagem SQL: Operador Intersect</a>
+17. <a href="#operador-minus">Linguagem SQL: Operador Minus</a>
+18. <a href="#subquery">Linguagem SQL: Subquery</a>
 
 ## <p id="introducao-banco-dados-mysql">Introdução ao Banco de Dados MySql</p>
 
@@ -586,3 +588,33 @@ SELECT
    FROM
    table2
 ```
+
+## <p id="subquery">Linguagem SQL: Subquery</p>
+
+Uma subconsulta é uma instrução do tipo `SELECT` dentro de uma outra instrução.
+
+Exemplo:
+
+```
+SELECT
+   column1, column2, ...
+   FROM
+      table1, subquery AS tabela2
+   WHERE
+      condition1, condition2, column = subquery ...
+```
+
+Exemplo: aplicando uma subquery em INSERT.
+
+```
+INSERT INTO table(column1, column2, column3)
+   subquery
+```
+
+Formas de utilização:
+
+- SELECT AS FIELDS - nova coluna da consulta.
+  1.  obs1: sempre deve retornar uma única coluna.
+- IN, EXISTS ou operadores de comparação - filtro de uma consulta.
+  1.  obs1: podem retornar N valores, mas apenas uma única coluna.
+- SELECT FROM SELECT - fonte de dados de uma consulta principal.
