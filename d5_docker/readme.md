@@ -69,4 +69,50 @@ _Nata: quando houver necessidade de mais de um Dockerfile, utilize esse formato 
 
 `# syntax=docker/dockerfile:1` - instrui sobre a sintaxe que será usada ao analisar o dockerfile.
 
-CONTINUER DE - COMENTÁRIOS
+### Imagem Base
+
+`FROM ubunto:22.04` - define a imagem base para Ubunto na versão 22.04
+
+### Configuração de Ambiente
+
+`RUN apt-get update && apt-get install -y python3 python3-pip` - executa comando de compilação dentro da imagem base.
+
+### Instalando Dependências
+
+`RUN pip install flask==3.0.*` - instala as dependências necessárias para o aplicativo.
+
+_OBS: a instrução acima tem como pré-requisito ter o pip instalado no contêiner de construção._
+
+### Copiando Arquivos
+
+`COPY hello.py /` - copia arquivo do contexto de compilação local para o diretória raiz da imagem.
+
+Contexto de aplicação - conjunto de arquivos que podem ser acessados em instruções do Dockerfile (Exemplo: COPY e ADD).
+
+### Configurando Variáveis de Ambiente
+
+`ENV flask_app=hello` - define a variável de ambiente linux.
+
+### Portas Expostas
+
+`EXPOSE 8000` - define um serviço na porta 8000.
+
+_Nota: instrução não obrigatória._
+
+### Iniciando Aplicativo
+
+`CMD ["flask", "run", "--host", "0.0.0.0", "--port", "8000"]` - inicia o servidor de desenvolvimento.
+
+- Versão "exec form" CMD.
+
+Exemplo: shell form.
+`CMD flask run --host 0.0.0.0 --port 8000`
+
+### Building
+
+`docker build -t test:latest .` - cria uma imagem de contêiner.
+
+- "-t test:latest": especifica o nome e a tag da imagem.
+- " . ": define o contexto de build para o diretório atual.
+
+`docker run -p 127.0.0.1:8000:8000 test:latest` - executa o aplicativo como um contêiner.

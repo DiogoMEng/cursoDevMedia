@@ -618,3 +618,4 @@ Formas de utilização:
 - IN, EXISTS ou operadores de comparação - filtro de uma consulta.
   1.  obs1: podem retornar N valores, mas apenas uma única coluna.
 - SELECT FROM SELECT - fonte de dados de uma consulta principal.
+  1.  obs1: é obrigatório a utilização do alias.
