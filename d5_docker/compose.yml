@@ -1,0 +1,14 @@
+include:
+  - infra.yaml
+
+services:
+  web:
+    # utiliza imagem construida a partir do Dockerfile diretório atual
+    build: .
+    ports:
+      - "8000:5000"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /code

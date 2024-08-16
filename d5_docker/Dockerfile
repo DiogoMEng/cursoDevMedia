@@ -1,18 +1,26 @@
-# ESPECIFICA A IMAGEM QUE SERÁ USADA
-# FROM imagem:version
-FROM node:16.14-alpine
+# cria uma imagem
+FROM python:3.10-alpine
 
-# DEFINE DIRETÓRIO DE TRABALHO DENTRO DO CONTAINER
-WORKDIR /cursoDocker
+# define diretório de trabalho
+WORKDIR /code
 
-COPY package* .
+# define variáveis de ambiente utilizadas pelo flask
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
 
-# INSTALA OS PACOTES LISTADOS
-# -- comando de compilação dentro da imagem base
-RUN npm install
+# instala o gcc e outras dependências do python
+RUN apk add --no-cache gcc musl-dev linux-headers
 
+# copia e instala as dependências do python
+COPY requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
+
+# descreve que o container executa na porta 5000
+EXPOSE 5000
+
+# copia diretório local para diretório de trabalho da imagem
 COPY . .
 
-ENTRYPOINT [ "npm", "run" ]
-# CMD - primeiro comando executado
-CMD [ "dev" ]
+# define o comando padrão para contêiner
+CMD ["flask", "run", "--debug"]
