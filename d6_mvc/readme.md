@@ -41,4 +41,4 @@ Objetos de padrão MVC:
 
 1. Controller: interpreta entradas do usuário, e envia comandos para view ou model.
 2. Model: gerencia os elementos de dados.
-3. CONTINUAR DAQUI --> Por fim, a visão (View) gerencia a área retangular do...
+3. View: apresenta informações ao usuário.
