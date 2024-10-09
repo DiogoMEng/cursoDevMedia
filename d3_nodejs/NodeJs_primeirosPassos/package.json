@@ -1,0 +1,15 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "1. <a href=\"#api\">API</a>\r 2. <a href=\"#Nodejs-introducao\">Node.js: Introducao</a>\r 3. <a href=\"#Nodejs-primeiro-projeto\">Node.js: Primeiro Projeto</a>",
+  "main": "primeiroProjeto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
