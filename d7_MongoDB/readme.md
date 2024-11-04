@@ -4,6 +4,7 @@
 
 1. <a href="#introducao-nosql">Introdução ao NoSQL</a>
 2. <a href="#conceitos-nosql">Conceitos acerca do NoSQL</a>
+3. <a href="#estrutura-mongodb">Estrutura de Funcionamento do MongoDB</a>
 
 ---
 
@@ -70,7 +71,9 @@ db.colecao_name.find({ "column_name": valor })
 
 O MongoDB é orientado a documentos (Documentos = Linhas) que são armazenados em coleções (Coleções = Tabelas).
 
-2. <p id="conceitos-nosql">Conceitos acerca do NoSQL</p>
+---
+
+# <p id="conceitos-nosql">Conceitos acerca do NoSQL</p>
 
 _Nota: o modelo relacional é mais indicado de uso quando estamos lidando com entidades que possam ser presentadas por um modelo estritamento rígido e bem estruturado_
 
@@ -96,3 +99,7 @@ _Nota: a chave identificadora é transformada (função transformadora) em um va
 **O modelo documental** utilizado por bases não relacionais utilizam a agregação, que é semelhante ao modelo relacional.
 
 _Nota: para lidar com arquivos digitais o modelo digital é o mais indicado._
+
+---
+
+# <p id="estrutura-mongodb">Estrutura de Funcionamento do MongoDB</p>
