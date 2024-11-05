@@ -103,3 +103,10 @@ _Nota: para lidar com arquivos digitais o modelo digital é o mais indicado._
 ---
 
 # <p id="estrutura-mongodb">Estrutura de Funcionamento do MongoDB</p>
+
+Trabalha com o formato de documentos (Linha) e coleções (Tabela).
+
+Funções:
+1. `db.collectionName.countDocument()`.
+
+7:26
