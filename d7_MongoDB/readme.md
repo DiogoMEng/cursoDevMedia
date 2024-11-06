@@ -104,9 +104,16 @@ _Nota: para lidar com arquivos digitais o modelo digital é o mais indicado._
 
 # <p id="estrutura-mongodb">Estrutura de Funcionamento do MongoDB</p>
 
-Trabalha com o formato de documentos (Linha) e coleções (Tabela).
+Trabalha com o formato de documentos (Linha), atributos (colunas) e coleções (Tabela).
 
 Funções:
 1. `db.collectionName.countDocument()`.
 
-7:26
+## Tipos de Dados
+
+Free Schema Design - flexibilização da estrutura presente em bases relacionais.
+
+_Nota: dentro do mongodb um documento é independente de outro._
+- documentos com diferentes estruturas podem estar na mesma coleção.
+
+9:00
