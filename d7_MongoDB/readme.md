@@ -116,4 +116,35 @@ Free Schema Design - flexibilização da estrutura presente em bases relacionais
 _Nota: dentro do mongodb um documento é independente de outro._
 - documentos com diferentes estruturas podem estar na mesma coleção.
 
-9:00
+_Nota: o mongodb trabalha com os tipos de objetos do javascript._
+
+Exemplo: inserção de dados.
+
+```bash
+
+# Date
+db.collectionName.insertOne({ "col2": new Date() })
+
+# Number
+db.collectionName.insertOne({ "col2": 4 })
+
+# String
+db.collectionName.insertOne({ "col2": 'string data' })
+
+# Float
+db.collectionName.insertOne({ "col2": 33.33 })
+
+# Array
+db.collectionName.insertOne({ "col2": ['first', 'second', 3] })
+
+# Boolean
+db.collectionName.insertOne({ "col2": true })
+```
+
+`findOne()` - método que realiza uma pesquisa baseada em um filtro.
+
+```bash
+db.collectionName.findOne({ col1: 4 })
+```
+
+24:03
