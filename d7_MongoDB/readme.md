@@ -5,6 +5,7 @@
 1. <a href="#introducao-nosql">Introdução ao NoSQL</a>
 2. <a href="#conceitos-nosql">Conceitos acerca do NoSQL</a>
 3. <a href="#estrutura-mongodb">Estrutura de Funcionamento do MongoDB</a>
+4. <a href="#crud-mongodb">Operações C.R.U.D com MongoDB</a>
 
 ---
 
@@ -147,4 +148,69 @@ db.collectionName.insertOne({ "col2": true })
 db.collectionName.findOne({ col1: 4 })
 ```
 
-24:03
+Exemplo: criando relação entre coleções.
+
+```bash
+# Collection 1 criada
+db.collection1.insert({ "col1": "some value" })
+
+# Criando Vasriável
+var variable1 = db.collection1.findOne({ "col1": "some value" })
+
+# Collection 2 criada
+db.collection2.insert({ "col2": "other doc", "col3": variable1._id })
+```
+
+**Método Embendding** - insere um documento dentro do outro para criar uma relação.
+
+Exemplo:
+
+```bash
+db.docEmb.insert({ "name": "John", "age": 25, Children: [ 
+  {"name": "Mike", "sex": "Male"},
+  {"name": "Milessa", "sex": "Female"} 
+] })
+```
+
+---
+
+# <p id="crud-mongodb">Operações C.R.U.D com MongoDB</p>
+
+C.R.U.D:
+- Criação.
+- Leitura.
+- Atualização.
+- Exclusão.
+
+Todas a operações de manipulações de dados serão realizadas por meio da chamada de métodos
+pertecente a objetos do Javascript.
+
+**CREATE DATA**
+- `insert()` - cria uma coleção na primeira inserção de um documento.
+
+```bash
+db.collection.insert({ chave1: valor1 })
+
+# INSERINDO POR MEIO DE UMA VARIÁVEL
+
+var x = { "col1": 6, "col2": "another string" }
+db.collection.save(x)
+```
+
+**READING DATA**
+- `find()` ou `findOne`- o primeiro retorna todos os dados, já o segundo retorna apenas um dado.
+- `show().`
+
+```bash
+db.collection.find()
+
+# Retorna os dados ordenados
+
+db.collection.find().sort({ col1: 1 })
+
+# Valor filtrado
+
+db.collection.findOne({ chave1: valor1 })
+```
+
+13:39
