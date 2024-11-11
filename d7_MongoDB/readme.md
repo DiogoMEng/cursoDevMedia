@@ -208,9 +208,48 @@ db.collection.find()
 
 db.collection.find().sort({ col1: 1 })
 
+# Limita a quantidade de elementos
+
+db.collection.find().limit(2)
+
 # Valor filtrado
 
 db.collection.findOne({ chave1: valor1 })
 ```
 
-13:39
+**UPDATING DATA**
+- `update()` - deve ter um filtro de pesquisa para filtrar apenas um único atributo.
+
+```bash
+db.collection.update({filter}, {new_data}) --> db.collection.update({ name: 'Diogo' }, { group: 'E', name: 'Diogo Mello', grade: 5.0 })
+
+# Trocando um único atributo
+
+db.collection.update({ "group": "D" }, { $set: { "grade": 9.8 } })
+```
+
+> OBS: O VALOR DE _ID NÃO PODE SER ALTERADO.
+
+`$set:` - pode ser usado para criar novas colunas, basta inserir um atributo que ainda não existia na coleção.
+
+**DELETE DATA**
+- `remove()`.
+
+```bash
+db.collection.remove({filter}).
+```
+
+_Nota: para excluir um documento completo, basta passar remove sem o filtro._
+
+---
+
+# <p id="capped-collections-mongodb">Capped Collections com MongoDB</p>
+
+_Nota: o siginificado do termo seria coleções com limitações de tamanho._
+
+As capped collections já apresentam um tamanho pré-definido, podendo ser classificado como número de bytes ou de documentos.
+- melhora o desempenho.
+- log circular: quando o espaço indicado em uma collection for atingido, o mongodb irá sobescrever o dado mais antigo.
+- garante a preservação da ordem de inserção.
+
+18:08
