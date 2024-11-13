@@ -6,6 +6,8 @@
 2. <a href="#conceitos-nosql">Conceitos acerca do NoSQL</a>
 3. <a href="#estrutura-mongodb">Estrutura de Funcionamento do MongoDB</a>
 4. <a href="#crud-mongodb">Operações C.R.U.D com MongoDB</a>
+5. <a href="#capped-collections-mongodb">Capped Collections com MongoDB</a>
+6. <a href="#operadores-mongodb">Operadores do MongoDB</a>
 
 ---
 
@@ -252,4 +254,30 @@ As capped collections já apresentam um tamanho pré-definido, podendo ser class
 - log circular: quando o espaço indicado em uma collection for atingido, o mongodb irá sobescrever o dado mais antigo.
 - garante a preservação da ordem de inserção.
 
-18:08
+`createCollection` - método utilizado para criar uma capped collection.
+- parâmetros: capped, size (número de bytes) e max (número máximo de documentos).
+
+Comando `runCommand` - usado para converter uma coleção normal em uma capped collection.
+- sintaxe: `db.runCommand( { "convertToCapped": <collectionName>, size: 100000 } )`
+
+_Nota: para verificar se uma coleção é uma capped ou não, utilize `db.collectionName.isCapped()`._
+
+> OBS: NÃO É PERMITIDO A REMOÇÃO DE DADOS EM UMA CAPPED COLLECTION.
+
+Info extra: aplicando ordem reversa ao retornar os dados.
+```bash
+db.collectionName.find().sort({ $natural: -1 })
+```
+
+---
+
+# <p id="operadores-mongodb">Operadores do MongoDB</p>
+
+```bash
+# Operadores
+
+$gt -- (>)
+$gte -- (>=)
+```
+
+02:50
