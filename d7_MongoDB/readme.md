@@ -274,10 +274,56 @@ db.collectionName.find().sort({ $natural: -1 })
 # <p id="operadores-mongodb">Operadores do MongoDB</p>
 
 ```bash
-# Operadores
+# Operadores Numéricos
 
 $gt -- (>)
 $gte -- (>=)
+$lt -- (<)
+$lte -- (<=)
+$ne -- (!= ou <>)
+$mod -- (Module Operator)
 ```
 
-02:50
+Exemplo:
+```bash
+# Retorna os documentos maiores que 5
+
+db.collectionName.find({ "col": { $gt: 5 } })
+
+# Retorna os valores que possuem como resto da divisão 0
+
+db.collectionName.find({ "col": { $mod: [2, 0] } })
+```
+
+```bash
+# Operadores Lógicos
+
+$and -- AND
+$or -- OR
+$not -- NOT
+```
+
+Exemplo:
+```bash
+# Retorna os valores que sejam 7 ou 9
+
+db.collection.find({ $or: [ {"value": 7}, {"value": 9} ] })
+
+# Valores não maiores que 5
+
+db.collection.find({ "value": { $not: { $gt: 5 } } })
+```
+
+```bash
+# Operadores condicionais
+
+$in -- retorna os operadores dentro de um array
+$nin -- retorna os valores que não estão dentro do array
+$all -- retorna todos os elementos no array
+$size -- retorna qualquer array que tenha um número específico de elementos
+$exists -- checa a existência de um atributo dentro de um documento
+```
+
+14:31 -- https://www.devmedia.com.br/view/viewaula.php?idcomp=32665
+
+
