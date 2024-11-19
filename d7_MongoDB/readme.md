@@ -324,6 +324,44 @@ $size -- retorna qualquer array que tenha um número específico de elementos
 $exists -- checa a existência de um atributo dentro de um documento
 ```
 
-14:31 -- https://www.devmedia.com.br/view/viewaula.php?idcomp=32665
+Exemplo:
+```bash
+# Retorna os valores que possuem a
 
+db.colOpCond.find({ values: { $in: ["a"] } })
+```
 
+Operador `Exists`: verifica se há ou não um atributo dentro de um documento.
+
+Exemplo:
+```bash
+db.colOpCond.find({ v: { $exist: true } })
+```
+
+Atributo especial `$where`: permite o uso de expressões javascript.
+
+```bash
+db.collection.find({ $where: "this.valueAttribute > 3" ]})
+```
+
+Exemplo: utilizando uma função como filtro
+```bash
+f = function() { return this.value <= 5 }
+
+db.collection.find(f);
+```
+
+## Operadores de Atualização de Dados
+
+```bash
+$inc - incrementa um valor por número. Caso o elemento não existe, ele será setado.
+$set - inseri um valor no atributo.
+$unset - remove um valor do atributo.
+$push - adiciona um elemento no array.
+$pushAll - adiciona mais de um elemento no array.
+$pop - retira um último elemento do array.
+$pull - retira todas as ocorrências de um determinado elemento do array.
+$pullAll - remove todas as ocorrências de qualquer valor num campo ou array.
+```
+
+22:40 - https://www.devmedia.com.br/view/viewaula.php?idcomp=32665
