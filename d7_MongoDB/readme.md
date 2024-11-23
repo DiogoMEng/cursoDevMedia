@@ -8,6 +8,9 @@
 4. <a href="#crud-mongodb">Operações C.R.U.D com MongoDB</a>
 5. <a href="#capped-collections-mongodb">Capped Collections com MongoDB</a>
 6. <a href="#operadores-mongodb">Operadores do MongoDB</a>
+7. <a href="#datas-mongodb">Trabalhando com Datas no MongoDB</a>
+8. <a href="#indices-mongodb">Índices no MongoDB</a>
+9. <a href="#gis-mongodb">Conceito de GIS no MongoDB</a>
 
 ---
 
@@ -364,4 +367,88 @@ $pull - retira todas as ocorrências de um determinado elemento do array.
 $pullAll - remove todas as ocorrências de qualquer valor num campo ou array.
 ```
 
-22:40 - https://www.devmedia.com.br/view/viewaula.php?idcomp=32665
+Exemplo:
+```bash
+db.colOpUpdate.update({ _id: 1 }, { $inc: { qtd: 1 } })
+
+db.colOpUpdate.update({}, { $unset: { v: 1 } }, false, true)
+```
+
+---
+
+# <p id="datas-mongodb">Trabalhando com Datas no MongoDB</p>
+
+O mongodb trabalha com um objeto interno, do tipo Data, assim como do javascript.
+
+```bash
+# Criando coleção
+db.colDate.insert(aDate: new Date());
+
+# Retorna um único valor a variável doc
+var doc = colDate.findOne();
+
+# Retorna valores de data a partir da variável doc
+doc.aDate.getMonth();
+
+doc.aDate.getDate();
+```
+
+_Notas: todas as modificações a serem realizadas os dados do tipo data devem ser modificados utilizando setDate()._
+
+Exemplo:
+```bash
+doc.aDate.setDate(doc.aDate.getDate() + 3);
+```
+
+---
+
+# <p id="indices-mongodb">Índices no MongoDB</p>
+
+O indice está associado ao desempenho, ou seja, ao tempo de execução das instruções que manipulam dados no mongodb.
+
+Todo índice possui uma chave, que nada mais é um atributo ou conjunto de atributos que vai organizar internamente os dados.
+
+_Nota: todo índice irá requerer um espaço em disco._
+
+```bash
+# Criando um índice
+db.people.ensureIndex({ name: 1 })
+
+# Utilizando o índice
+db.people.find({ name: "Mary" })
+```
+
+método `getIndexes()` - retorna todos os índices de uma determinada coleção.
+
+**Índice composto** - possui mais de uma chave.
+- quando o valor de primeira chave repetir, a segunda chave será utilizada.
+- uso indicado quando ocorre repetição de grupos de dados.
+
+```bash
+# Criando índice composto
+db.compIndex.ensureIndex({ id: 1, name: -1})
+
+# Criando um índice unico
+db.compIndex.ensureIndex({ id: 1 }, { unique: true } )
+
+# Remoção de índice
+db.people.dropIndex({ name: 1 })
+```
+
+> OBS: CASO A CARACTERISTICA DOS DADOS DENTRO DA BASE SOFRAM UMA MUDANÇA RADICAL, SERÁ NECESSÁRIO RE-INDEXAR UTILIZANDO `reIndex()`.
+
+---
+
+# <p id="gis-mongodb">Conceito de GIS no MongoDB</p>
+
+A sigla GIS se refere ao armazenamento de dados georeferenciados ou geográficos.
+
+Tipos de dados geográficos disponíveis:
+1. `Point`.
+2. `LineString`.
+3. `Polygon`.
+4. `MultiPoint`.
+5. `MultiLineString`.
+6. `MultiPolygon`.
+
+10:42 - https://www.devmedia.com.br/view/viewaula.php?idcomp=32741.
