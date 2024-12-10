@@ -11,6 +11,7 @@
 7. <a href="#datas-mongodb">Trabalhando com Datas no MongoDB</a>
 8. <a href="#indices-mongodb">Índices no MongoDB</a>
 9. <a href="#gis-mongodb">Conceito de GIS no MongoDB</a>
+10. <a href="#agregacao-mongodb">Agregação com MongoDB</a>
 
 ---
 
@@ -451,4 +452,52 @@ Tipos de dados geográficos disponíveis:
 5. `MultiLineString`.
 6. `MultiPolygon`.
 
-10:42 - https://www.devmedia.com.br/view/viewaula.php?idcomp=32741.
+Exemplo: inserindo coordenadas no mongodb.
+```bash
+db.colNewPlaces.insert( { name: "My fav. point", loc: { type: "Point", coordinates: [37.7577, -122.4376] } } )
+```
+
+Criando métodos de pesquisa:
+- `$geoWithin`.
+- `$geoIntersects`.
+- `$near`.
+- `$nearSphere`.
+
+```bash
+db.collection.find( { loc: { $geoWithin: { $geometry: { type: "Polygon", coordinates: [[0, 0], [0, 1]] } } } } )
+```
+
+_Nota: para estes tipos de dados geográficos, é importante que se crie índices para otimizar ainda mais a pesquisa._
+
+# <p id="agregacao-mongodb">Agregação com MongoDB</p>
+
+Agregação é a maneira de se trabalhar com grupos de dados.
+
+Operador `$group` - utilizado para realizar agregações junto com o método aggregate.
+
+Operadores acumuladores:
+1. `count()` - retorna o número de documentos dentro da coleção.
+  - exemplo: `db.collection.count()`.
+  - filtro: `db.collection.count({ color: 'blue' })`.
+  - filtro 2: `db.collection.count({ nro: { $gt: 3 } })`.
+2. `$sum` - realiza a soma.
+3. `$avg` - retorna a média.
+4. `$max` e `$min` - retorna o valor máximo e mínimo.
+5. `$first` e `$last`
+
+_Nota: count não retorna os valores distintos, para retornar métodos deve-se utilizar `distinct()`._
+- `db.collection.distinct("color")`.
+- filtro: `db.collection.distinct("color", { nro: 5 })`.
+
+**Filtros com chaves encadeadas** - quando uma coleção possui uma coleção mais interna.
+
+Exemplo:
+```bash
+db.collection.insert({ person: { age: 25 } })
+
+db.collection.count({ person.age: 25 })
+```
+
+Método `aggregate()` - utilizado para agregar os dados.
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=32742 -- 14:56
