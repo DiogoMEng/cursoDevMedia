@@ -500,4 +500,26 @@ db.collection.count({ person.age: 25 })
 
 Método `aggregate()` - utilizado para agregar os dados.
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=32742 -- 14:56
+```bash
+# SINTAXE
+db.collection.aggregate({
+  $group: {
+    _id: "atributo", name_agg: {
+      $accumulator: $atributo_agg
+    }
+  }
+})
+```
+- `_id: "atributo"`: atributo que deve-se agrupar.
+- `name_agg`: atributo que será agregado.
+- `$accumulator: $atributo_agg`: passar o atributo de acumulação e o atributo que será agregado.
+
+Exemplo:
+```bash
+# INSERINDO DADOS NA COLLECTION
+db.colGroup.insert({ a: 2, b: "x", c: 0.1, active: 1 })
+
+# AGREGANDO OS VALORES
+db.colGroup.aggregate({ $group: { _id: "$b", total_b: { $sum: 1 } } });
+```
+https://www.devmedia.com.br/view/viewaula.php?idcomp=32977
