@@ -1,0 +1,13 @@
+h1 {
+  font-family: Arial;
+  color: #333;
+}
+
+p {
+/* informa o tamanho do elemento */
+  font-size: 14px;
+}
+
+blockquote {
+  margin: 0;
+}
