@@ -149,4 +149,66 @@ div p {
 
 <p id="estilo-texto-css">Introdução: Aplicando estilos a elementos de texto</p>
 
-https://www.devmedia.com.br/css-aplicando-estilos-a-elementos-de-texto/40777
+**Negrito** - a propriedade `font-weight` é utilizada para aplicar ou remover negrito de um elemento de texto.
+- O valor da propriedade pode ser numérico ou por uma palavra.
+
+_Nota: os valores numéricos vão de 100 até 900, tendo um acrescimo de 100 em cada um (Ex: 100, 200, 300, ..., 900)._
+
+```css
+p {
+  font-weight: 400; /* Corresponde a aparência padrão da maioria das fontes */
+}
+```
+
+_Nota: os valores mais utilizados são de 400 e 700, sendo o primeiro a fonte padrão e o segundo o negrito._
+
+**Itálico** - estilo obtido utilizando a propriedade `font-style` com o valor italic.
+
+```css
+p {
+  font-style: italic;
+}
+```
+
+**Cor** - a cor do texto pode ser aplicada utilizando a propriedade `color`, que recebe tanto valores textuais quanto valores numéricos.
+- Valores numéricos: hexadecimais (Ex: `#fdfdfd`).
+- Valores textuais: black ou white.
+
+```css
+p {
+  /* AMBOS REPRESENTAM A MESMA COR */
+  /* color: red; */
+  color: #ff0000;
+}
+```
+
+Funções de Cor:
+1. RGB - utiliza as cores vermelha, verde e azul para gerar uma cor.
+  - `rgb( red, green, blue )` - recebe como parâmetro 3 valores que podem variar de 0 a 255.
+2. RGBA - possui as mesmas capacidades da função RGB, porém possui um quarto parâmetro chamado alpha (Varição de 0.0 a 1.0), que determina a opacidade da cor.
+3. HSL.
+
+Exemplo: aplicando as funções.
+```css
+/* RGB */
+p {
+  color: rgb(81, 155, 0);
+}
+
+/* RGBA */
+p {
+  color: rgba(81, 155, 0, 0.5);
+}
+```
+
+**Tamanho da Fonte** - a propriedade `font-size` pode ser utilizada para modificar o tamanho da fonte, recebendo palavras-chaves ou numéros.
+- Palavras-chaves: xx-small, x-small, small, smaller, medium, larger, large, x-large, xx-large (Vai do menor ou maior).
+- Para valores numéricos é importante informar em que unidade css o elemento se encontra.
+
+```css
+p {
+  font-size: 22px;
+}
+```
+
+**Fonte** - https://www.devmedia.com.br/css-aplicando-estilos-a-elementos-de-texto/40777
