@@ -211,4 +211,48 @@ p {
 }
 ```
 
-**Fonte** - https://www.devmedia.com.br/css-aplicando-estilos-a-elementos-de-texto/40777
+**Fonte** - a propriedade `font-family` pode ser utilizada para customizar a fonte utilizada em um texto.
+
+```css
+p {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+```
+
+_Nota: nomes com várias palavras devem está sempre entre aspas._
+
+**Alinhamento** - para alinhar um texto, pode-se utilizar a propriedade text-align.
+
+Formas de alinhamento:
+1. `right`.
+2. `left`.
+3. `center`.
+4. `justify`.
+
+```css
+p {
+  text-align: center;
+}
+```
+
+**Propriedade `text-decoration`** - responsável por aplicar linhas em um texto.
+
+```css
+h1 {
+  font-size: 48px;
+  font-family: Verdana;
+  text-decoration: underline;
+}
+```
+
+![alt text](img/image3.png)
+
+_Nota: essa propriedade é muito utilizado para remover o sublinhado dos links que vem por padrão._
+
+**Altura de linhas dos texto** - a propriedade `line-height` pode ser utilizada para adicionar o espaçamento entre as linhas.
+
+```css
+p {
+  line-height: 48px;
+}
+```
