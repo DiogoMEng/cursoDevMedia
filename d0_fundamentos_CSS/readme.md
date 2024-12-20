@@ -5,6 +5,7 @@
 1. <a href="#conceitos-css">Introdução: Conceitos iniciais de CSS</a>
 2. <a href="#seletores-css">Introdução: seletores CSS</a>
 3. <a href="#estilo-texto-css">Introdução: Aplicando estilos a elementos de texto</a>
+3. <a href="#propriedades-css">Introdução: Propriedades</a>
 
 ---
 
@@ -256,3 +257,8 @@ p {
   line-height: 48px;
 }
 ```
+
+---
+
+# <p id="propriedades-css">Introdução: Propriedades</p>
+
