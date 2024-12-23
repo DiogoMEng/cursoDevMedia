@@ -262,3 +262,54 @@ p {
 
 # <p id="propriedades-css">Introdução: Propriedades</p>
 
+sintaxe:
+
+```css
+elemento {
+  propriedade: valor;
+}
+```
+
+As propriedades representam características dos elementos das páginas web.
+
+**COR** - propriedades usadas para alterar a cor `color` (altera a cor do texto) e `background-color` (altera o fundo do elemento).
+
+_Nota: **tag body** contém todos os elementos que são visíveis na tela._
+
+```css
+/* DEFINE A COR DE FUNDO PRINCIPAL DO SITE */
+body {
+  background-color: #000000;
+}
+
+p {
+  color: blue;
+}
+```
+
+**FONTE** - propriedade usadas para alterar a fonte `font-size` (altera o tamanho da fonte), `font-weight` (altera a espessura da fonte) e `font-family` (altera o estilo da fonte).
+
+Fontes Padrões mais Utilizadas:
+![alt text](img/image4.png)
+
+```css
+h1 {
+  font-size: 45px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+```
+
+Propriedade `text-decoration` - propriedade utilizada para aplicar linhas no texto.
+
+Exemplo:
+
+![alt text](img/image5.png)
+
+![alt text](img/image6.png)
+
+_Nota: esta propriedade é muito utilizada para remover o sublinhado dos links._
+
+Propriedade `text-align` - propriedade responsável por alinhas os textos.
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43195
