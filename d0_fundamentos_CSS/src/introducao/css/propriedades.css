@@ -1,0 +1,33 @@
+/* h1 {
+  font-size: 32px;
+  font-family: "Verdana";
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Verdana";
+  color: gray
+}
+
+p {
+  font-size: 16px;
+  font-family: "Verdana";
+}
+
+span {
+  font-weight: bold;
+} */
+
+div {
+  width: 500px;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: Verdana;
+}
+
+img {
+  width: 150px;
+  height: 170px;
+}

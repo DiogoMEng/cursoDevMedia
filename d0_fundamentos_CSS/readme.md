@@ -312,4 +312,31 @@ _Nota: esta propriedade é muito utilizada para remover o sublinhado dos links._
 
 Propriedade `text-align` - propriedade responsável por alinhas os textos.
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43195
+![alt text](img/image7.png)
+
+Propriedade `line-height` - define a altura das linhas dos textos.
+
+```css
+p {
+  font-size: 24px;
+  line-height: 48px;
+}
+```
+
+![alt text](img/image8.png)
+
+_Nota: se um estilo de fonte for aplicado em uma div, todos os elementos serão afetados._
+
+**ALTURA E LARGURA** - propriedades que definem a área que um elemento ocupa na tela, `height` e `width`.
+
+```css
+div {
+/* define a altura do elemento */
+  height: 100px;
+/* define a largura do elemento */
+  width: 400px;
+}
+```
+
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43196
