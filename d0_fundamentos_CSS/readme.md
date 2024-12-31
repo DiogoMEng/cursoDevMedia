@@ -338,5 +338,69 @@ div {
 }
 ```
 
+**Margem** - representa a distância entre os elementos de uma página.
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43196
+```css
+h1 {
+  font-size: 20px;
+  font-family: Verdana;
+  text-align: center;
+  margin: 60px; /* REPRESENTA A DISTÂNCIA PARA TODOS OS LADOS DO ELEMENTO */
+}
+```
+
+![alt text](img/image9.png)
+
+Outras propriedades de margem:
+1. `margin-top` - aplica margem na parte superior.
+2. `margin-bottom` - aplica margem na parte inferior.
+3. `margin-right` - aplica margem na parte direita.
+4. `margin-left` - aplica margem na parte esquerda.
+
+![alt text](img/image10.png)
+
+Exemplo: definindo margem com a forma compacta.
+```css
+div {
+  margin: 70px  20px   10px    60px
+  /*      Top   Right  Bottom  Left*/
+}
+
+div {
+  margin:     10px             20px
+  /*      Top e Bottom    left e Right*/
+}
+```
+
+Exemplo: forma de centralizar um elemento na tela.
+```css
+div {
+  margin: 10px auto /* auto: margem se ajustam de acordo com os valores da tala */
+}
+```
+
+_Nota: é sempre mais indicado utilzar a propriedade margin, do que especificar cada umas das margens._
+
+**Borda** - representam as linhas que cortonam os elementos.
+
+Propriedades de borda:
+1. `border-width` - largura da borda.
+2. `border-style` - estilo da borda.
+3. `border-color` - cor da borda.
+
+```css
+div {
+  width: 600px;
+  border-width: 2px;
+  border-style: solid;
+  border-style: #454545;
+}
+
+/* FORMA RESUMIDA */
+
+span {
+  border: 2px dashed #ff0000;
+}
+```
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43198
