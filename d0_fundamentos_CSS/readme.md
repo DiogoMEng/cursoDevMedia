@@ -403,4 +403,67 @@ span {
 }
 ```
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43198
+Propriedades para adicionar borda em lados específicos dos elementos:
+1. `border-top` - aplica borda na parte superior.
+2. `border-bottom` - aplica borda na parte inferior.
+3. `border-left` - aplica borda na parte lateral esquerda.
+4. `border-right` - aplica borda na parte lateral direita.
+
+![alt text](img/image11.png)
+
+**Espaçamento interno** - propriedade `padding` pode ser utilizado para criar espaçamento interno nos elementos.
+
+```css
+a {
+  border: 2px solid black;
+  padding: 10px;
+}
+```
+
+![alt text](img/image12.png)
+
+Propriedades de espaçamento mais específicas:
+1. `padding-top` - espaçamento superior.
+2. `padding-bottom` - espaçamento inferior.
+3. `padding-left` - espaçamento na lateral esquerda.
+4. `padding-right` - espaçamento na lateral direita.
+
+![alt text](img/image13.png)
+
+Exemplo: forma compacta.
+- Possui a mesma ideia de margin.
+
+```css
+div {
+  padding: 10px  15px    10px   15px;
+  /*       Top   Right  Bottom  Left*/
+}
+```
+
+**Arredondamento de bordas**
+
+Propriedade `border-radius` - server para arredondar os cantos de bordas de um elemento.
+
+```css
+div {
+  width: 200px;
+  padding: 5px;
+  border: 8px solid #000000;
+  border-radius: 15px;
+}
+```
+
+Exemplo: arredondando as bordas com elementos diferente.
+
+```css
+div {
+  border-radius:  80px   30px   70px   50px;
+  /*              Top   Right  Bottom  Left*/
+}
+```
+
+**União de Estilos**
+
+Estilização de mais de um elemento com o mesmo código.
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43201
