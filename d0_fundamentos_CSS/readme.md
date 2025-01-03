@@ -5,7 +5,8 @@
 1. <a href="#conceitos-css">Introdução: Conceitos iniciais de CSS</a>
 2. <a href="#seletores-css">Introdução: seletores CSS</a>
 3. <a href="#estilo-texto-css">Introdução: Aplicando estilos a elementos de texto</a>
-3. <a href="#propriedades-css">Introdução: Propriedades</a>
+4. <a href="#propriedades-css">Introdução: Propriedades</a>
+5. <a href="#seletores-css">Introdução: Seletores</a>
 
 ---
 
@@ -466,4 +467,17 @@ div {
 
 Estilização de mais de um elemento com o mesmo código.
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43201
+```css
+span, li {
+  font-size: 24px;
+  font-family: Verdana;
+  color: #2255ee;
+}
+```
+
+# <p href="#seletores-css">Introdução: Seletores</p>
+
+Os seletores servem para criar uma estilização única para o elemento.
+- identificadores de elementos.
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43267
