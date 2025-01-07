@@ -7,6 +7,7 @@
 3. <a href="#estilo-texto-css">Introdução: Aplicando estilos a elementos de texto</a>
 4. <a href="#propriedades-css">Introdução: Propriedades</a>
 5. <a href="#seletores-css">Introdução: Seletores</a>
+6. <a href="#background">Background - Preenchendo o fundo de um elemento</a>
 
 ---
 
@@ -480,4 +481,27 @@ span, li {
 Os seletores servem para criar uma estilização única para o elemento.
 - identificadores de elementos.
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43267
+```html
+<!-- Seletor de classe em um elemento -->
+<span class="text-destaque"> ... </span>
+
+<!-- Elemento com mais de um seletor -->
+<span class="text-destaque text-green"> ... </span>
+```
+
+```css
+.text-destaque {
+  color: #ff2200;
+}
+```
+
+**Descendência de elementos** - aplica um estilo em um elemento filho.
+- o processo aplicado a baixo também serve para seletores de classe e por id.
+```css
+div p {
+  font-weight: bold;
+  color: red;
+}
+```
+
+https://www.devmedia.com.br/view/viewaula.php?idcomp=43292
