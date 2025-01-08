@@ -476,6 +476,8 @@ span, li {
 }
 ```
 
+---
+
 # <p href="#seletores-css">Introdução: Seletores</p>
 
 Os seletores servem para criar uma estilização única para o elemento.
@@ -504,4 +506,38 @@ div p {
 }
 ```
 
-https://www.devmedia.com.br/view/viewaula.php?idcomp=43292
+---
+
+# <p id="background">Background: Preenchendo o fundo de um elemento</p>
+
+```css
+div {
+  /* adiciona uma imagem de fundo */
+  background-image: url('./caminho');
+
+  /* usado para informar como a imagem irá se repetir dentro do elemento */
+  background-repeat: no-repeat;
+
+
+  background-position: 10px;
+  background-size: 100px;
+  background-attachment: fixed;
+}
+```
+
+_Nota: A propriedade `background-image` é comumente utilizada em divs, body e tags semânticas._
+
+Valores para `background-repeat`:
+1. `no-repeat` - não repete imagem.
+2. `repeat-y` - imagem se repete na vertical.
+3. `repeat-x` - imagem se repete na horizontal.
+
+
+_Nota: podemos utilizar `background-color` para preencher os espaços que a imagem não se repete._
+
+```css
+body {
+  background-image: url('caminho');
+  background-color: #fdfdfd;
+}
+```
