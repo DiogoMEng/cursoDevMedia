@@ -541,3 +541,44 @@ body {
   background-color: #fdfdfd;
 }
 ```
+
+`background-position` utilizada para alterar a posição de imagem (valores: center, right, left, top e bottom).
+
+```css
+body {
+  background-position: url('caminho');
+  background-position: center;
+}
+```
+
+`background-size` utilizada para ajustar o tamanho da imagem de fundo.
+
+Valores para propriedade acima:
+1. cover - imagem ocupa todo os espaço do elemento.
+2. contain - estica a imagem sem perder a proporção.
+3. 
+
+_Nota: a também a possibilidade de inserir valores para definir a porcentagem da tamanho do elemento._
+```css
+
+div {
+  /*             largura  altura*/
+  background-size: 50%      70%;
+}
+```
+
+`background-attachment` permite deixar a imagem estática.
+
+```css
+div {
+  background-attachment: fixed;
+}
+```
+
+Exemplo: forma resumida das propriedades de background.
+
+```css
+body {
+  background:    #0f0   url('caminho')  no-repeat    top right      fixed;
+            /* bk-color  bk-image       bk-repeat  bk-position  bk-attachment*/
+}
