@@ -7,7 +7,8 @@
 3. <a href="#estilo-texto-css">Introdução: Aplicando estilos a elementos de texto</a>
 4. <a href="#propriedades-css">Introdução: Propriedades</a>
 5. <a href="#seletores-css">Introdução: Seletores</a>
-6. <a href="#background">Background - Preenchendo o fundo de um elemento</a>
+6. <a href="#background">Background: Preenchendo o fundo de um elemento</a>
+7. <a href="#box-model">Box Model: Modificando elementos HTML</a>
 
 ---
 
@@ -582,3 +583,20 @@ body {
   background:    #0f0   url('caminho')  no-repeat    top right      fixed;
             /* bk-color  bk-image       bk-repeat  bk-position  bk-attachment*/
 }
+```
+
+---
+
+# <p id="box-model">Box Model: Modificando elementos HTML</p>
+
+**Valores relativos** - o elemento irá se adaptar de acordo com o tela do usuário.
+- valor definido com base em outro elemento.
+
+```css
+div {
+  width: 70%;
+}
+```
+
+_Nota: o valor percentual aplicado a um elemento é relativo ao tamanho do seu elemento pai._
+
