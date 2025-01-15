@@ -600,3 +600,62 @@ div {
 
 _Nota: o valor percentual aplicado a um elemento é relativo ao tamanho do seu elemento pai._
 
+```css
+/* Se refere a largura da tela */
+/* --> 1 vw = 1% da largura da tela */
+section {
+  width: 1vw;
+}
+
+/* Se refere a altura da tela */
+section {
+  width: 1vh;
+}
+```
+
+`calc` - permite realizar calculos com valores relativos em css.
+
+```css
+img {
+  width: calc(100vw - 60px);
+  margin: 30px;
+}
+```
+
+## Definindo o tamanho dos elementos
+
+**Propriedades**:
+- `min-width` - define a largura mínima.
+- `max-width` - define a largura máxima.
+- `min-height` - define a altura mínima.
+- `max-height` - define a altura máxima.
+
+_Nota: as propriedades acima sempre irão se sobrepor a propriedade `width` ou `height`._
+
+```css
+img {
+  width: 100%;
+  min-width: 1200px;
+  min-height: 1350px;
+}
+```
+
+## Overflow
+
+Garante que o conteúdo respeite as dimensões do elemento.
+
+```css
+.area {
+  width: calc(100% - 110px);
+  height: calc(50vh - 70px);
+  padding: 15px 20px;
+  margin: 0px 35px 20px 35px;
+  overflow: scroll; /* valores: scroll, auto. */
+}
+```
+
+**Propriedades**:
+- `overflow-x`: somente horizontal.
+- `overflow-y`: somente vertical.
+
+<Agora veja como é possível simplificar o overflow-x>
