@@ -658,4 +658,62 @@ Garante que o conteúdo respeite as dimensões do elemento.
 - `overflow-x`: somente horizontal.
 - `overflow-y`: somente vertical.
 
-<Agora veja como é possível simplificar o overflow-x>
+```css
+div {
+  /* forma simplificada de overflow-x e overflow-y */
+  overflow: auto scroll;
+}
+```
+
+## Exibindo e Ocultando Elementos
+
+Todo elemento possui por padrão o tipo de exibição `block` ou `inline`.
+- **elemento `block`**: criado sempre após o elemento anterior, e ocupam toda largura disponível.
+- **elemento `inline`**: criado um ao lado do outro, e ocupam apenas a largura necessário para exibir o conteúdo.
+
+_Nota: as propriedade acima podem ser modificadas utilizando a propriedade `display`._
+
+```css
+.perfil p {
+  display: inline;
+}
+```
+
+**Propriedade `display`** - modifica o modo de exibição de um elemento.
+- alguns valores: `inline`, `block` e `none`.
+
+**Propriedade `visibility`** - controla a visibilidade de um elemento na tela.
+- alguns valores: `visible` e `hidden`.
+
+> OBS: VISIBILITY NÃO REMOVE O ESPAÇO DO ELEMENTO NA TELA.
+
+```css
+div {
+  visibility: hidden;
+}
+```
+
+**Propriedade `opacity`** - define a opacidade de um elemento na tela.
+
+```css
+img {
+  width: calc(100% - 24px);
+  padding: 12px;
+  opacity: 50%;
+}
+```
+
+## Box-Sizing
+
+Propriedade que altera a forma como o tamanho de um elemento é calculado.
+
+```css
+/* Considera o padding e border na largura total dos elementos */
+* {
+  box-sizing: border-box;
+}
+```
+
+![alt text](img/image14.png)
+
+<Agora que você entende o funcionamento do box-sizing>
