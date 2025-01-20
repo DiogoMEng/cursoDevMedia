@@ -9,6 +9,7 @@
 5. <a href="#seletores-css">Introdução: Seletores</a>
 6. <a href="#background">Background: Preenchendo o fundo de um elemento</a>
 7. <a href="#box-model">Box Model: Modificando elementos HTML</a>
+8. <a href="#posicionamento">Posicionamento: Position Fixed</a>
 
 ---
 
@@ -716,4 +717,45 @@ Propriedade que altera a forma como o tamanho de um elemento é calculado.
 
 ![alt text](img/image14.png)
 
-<Agora que você entende o funcionamento do box-sizing>
+## Box-Shadow
+
+```css
+img {
+  width: 250px;
+  height: 250px;
+  box-shadow:  20px     0      10px      30px    blue;
+          /* desl-x  desl-x  desfoque  expansão  cor*/
+}
+```
+
+![alt text](img/image15.png)
+
+Valor `inset` - cria uma sombra na frente do elemento.
+
+```css
+img {
+  box-shadow: 20px 0 10px 30px blue inset;
+}
+```
+
+> OBS: O VALOR ACIMA NÃO FUNCIONA COM IMAGENS.
+
+---
+
+# <p id="posicionamento">Posicionamento: Position Fixed</ṕ>
+
+_Nota: os elementos podem ficam fixos na página mesmo após o scroll._
+
+```css
+div {
+  /* FIXAR UM ELEMENTO NA TELA */
+  position: fixed;
+  right: 100px;
+}
+```
+
+**Propriedades para mover o elemento**:
+- `top`.
+- `bottom`.
+- `left`.
+- `right`.
