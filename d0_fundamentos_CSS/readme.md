@@ -9,7 +9,9 @@
 5. <a href="#seletores-css">Introdução: Seletores</a>
 6. <a href="#background">Background: Preenchendo o fundo de um elemento</a>
 7. <a href="#box-model">Box Model: Modificando elementos HTML</a>
-8. <a href="#posicionamento">Posicionamento: Position Fixed</a>
+8. <a href="#posicionamento-fixed">Posicionamento: Position Fixed</a>
+9. <a href="#posicionamento-relative-absolute">Posicionamento: Position Relative e Absolute</a>
+10. <a href="#flexbox">Flexbox</a>
 
 ---
 
@@ -759,3 +761,37 @@ div {
 - `bottom`.
 - `left`.
 - `right`.
+
+---
+
+# <p id="posicionamento-relative-absolute">Posicionamento: Position Relative e Absolute</p>
+
+```css
+h2 {
+  /* PERMITE MOVER O ELEMENTO LIVREMENTE NA PÁGINA */
+  position: absolute;
+}
+```
+
+_Nota: diferentemente de fixed, o elemento com a propriedade absolute não ficará fixo na tela quando rolar o scroll._
+
+> OBS: AS PROPRIEDADES `top`, `bottom`, `left` e `right` SÃO ÚTEIS SOMENTE COM POSITION.
+
+```css
+h2 {
+  /* PERMITE MOVER O ELEMENTO LIVREMENTE NA PÁGINA */
+  /* PORÉM O ELEMENTO NÃO IRÁ SAIR DO FLUXO PADRÃO DO HTML */
+  position: relative;
+}
+```
+
+A propriedade `position: absolute` considera as bordas da página como referência.
+
+_Nota: definir relative no elemento pai, fará com que o elemento filho definido com absolute considere seu elemento pai como referência._
+
+---
+
+# <p id="flexbox">Flexbox</p>
+
+Principal forma de posicionar elementos com CSS.
+
