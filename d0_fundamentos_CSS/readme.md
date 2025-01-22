@@ -795,3 +795,38 @@ _Nota: definir relative no elemento pai, fará com que o elemento filho definido
 
 Principal forma de posicionar elementos com CSS.
 
+_Nota: container que possui informações._
+
+```css
+.container {
+  width: 100%;
+  display: flex;
+  
+  /* Gera um espaçamento entre os elementos */
+  justify-content: space-around;
+
+  /* posicionamente será ajustado conforme a largura da tela */
+  flex-wrap: wrap;
+}
+```
+
+Ao aplicar a propriedade `display: flex` os elementos serão posicionados lado a lado devido a propriedade padrão `flex-direction: row`.
+
+**Propriedade `flex-direction`** - indica a direção que os elementos são alinhados.
+- valores: `column`, `row-reverse` e `column-reverse`
+
+## Flex-warap e Flex-flow
+
+**Propriedade `Flex-wrap`** - indica se os elementos devem quebrar a linha para se ajustarem a tela.
+
+Propriedade Flex-flow - abreviação de `flex-direction` e `flex-wrap`.
+
+```css
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow:    row            nowrap;
+        /* flex-direction    flex-wrap */
+}
+```
+
