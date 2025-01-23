@@ -830,3 +830,62 @@ Propriedade Flex-flow - abreviação de `flex-direction` e `flex-wrap`.
 }
 ```
 
+## Justify-Content
+
+Gera um espaçamento entre os elementos de um container e definir seus posicionamentos.
+
+_Nota: valor padrão `flex-start`._
+
+Valores para a propriedade:
+- `flex-end`: alinhamento a direita.
+- `center`: centraliza.
+- `space-between`: distribui os elementos no container.
+- `space-around`: distribui os elementos no container adicionando margem.
+- `space-evenly`: distribui os elementso com espaçamentos igual.
+
+_Nota: os alinhamentos acima podem ser aplicados em colunas, basta utilizar `flex-direction: column`._
+
+```css
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+```
+
+## Align-items
+
+Valores para a propriedade:
+- `center`: centralizar.
+- `flex-start`: posiciona no topo do container.
+- `flex-end`: posiciona no fundo do container.
+- `stretch`: os cards irão ocupar toda altura disponível do container.
+
+## Propriedades dos elementos filhos
+
+São elas:
+1. `flex-grow` - indica como o elemento filho ocupará o espaço disponível, conforme a largura do container pai.
+  - necessário que o container pai esteja com `display: flex`.
+  - evita os **"buracos"** no container.
+
+```css
+.card {
+  width: 250px;
+
+  /* --> valor 1: indica que a taxa de crescimento será padrão */
+  /* --> valor 0: indica nenhum crescimento */
+  /* valores 2 e 3 podem ser aplicados para os cards ficarem maiores que outros */
+  flex-glow: 1
+}
+```
+
+2. `flex-shrink`.
+3. `flex-basis`.
+4. `flex`.
+
+<Crescimento dos cards c>
