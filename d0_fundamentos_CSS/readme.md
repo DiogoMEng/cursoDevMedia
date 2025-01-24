@@ -884,8 +884,36 @@ São elas:
 }
 ```
 
-2. `flex-shrink`.
-3. `flex-basis`.
-4. `flex`.
+2. `flex-shrink` - indica como um elemento filho terá seu tamanho reduzido para continuar a caber em um container.
 
-<Crescimento dos cards c>
+```css
+.card {
+  width: 200px;
+  height: 200px;
+
+  /* --> valor 1: indica uma redução de tamanho proporcional. */
+  /* valores 2 e 3 podem ser aplicados para os cards ficarem menores que outros */
+  flex-shrink: 1;
+}
+```
+
+3. `flex-basis` - indica uma largura ou uma altura inicial para um elemento filho, conforme o alinhamento do container.
+
+_Nota: para definir a altura o container precisa está com `flex-direction: column` ativado._
+
+```css
+.card {
+  height: 200px;
+  padding: 10px 20px;
+  flex-basis: 200px;
+}
+```
+
+4. `flex` - abreviação de todas as propriedades acima.
+
+```css
+.card {
+  flex: flex-grow  flex-shrink  flex-basis
+        /* 1            1          200px */
+}
+```
