@@ -20,3 +20,16 @@ body {
   background-color: #2f3237;
   border-radius: 4px;
 }
+
+.container-imagem img {
+  width: 100%;
+  border-radius: 4px 4px 8px 8px;
+}
+
+.container-info {
+  padding: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

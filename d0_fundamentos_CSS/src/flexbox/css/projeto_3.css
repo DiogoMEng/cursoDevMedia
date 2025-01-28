@@ -1,0 +1,35 @@
+.container-topo {
+  background-color: white;
+  padding: 35px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container-logo {
+  width: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-links {
+  width: 385px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container-links a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #233032;
+}
+
+.container-logo-imagem {
+  width: 100px;
+  height: 100px;
+}
