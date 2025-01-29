@@ -33,3 +33,46 @@
   width: 100px;
   height: 100px;
 }
+
+.container-logo-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-logo p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f86d6;
+}
+
+.secao-banner {
+  background-color: #2f86d6;
+  padding: 100px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-texto {
+  color: #fff;
+  padding: 10px 20px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-imagem {
+  flex: 1 1 468px;
+}
+
+.container-imagem img {
+  width: 100%;
+  height: 100%;
+}

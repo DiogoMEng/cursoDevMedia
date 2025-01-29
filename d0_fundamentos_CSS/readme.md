@@ -12,6 +12,7 @@
 8. <a href="#posicionamento-fixed">Posicionamento: Position Fixed</a>
 9. <a href="#posicionamento-relative-absolute">Posicionamento: Position Relative e Absolute</a>
 10. <a href="#flexbox">Flexbox</a>
+11. <a href="#pseudo-classes-elementos">Estilizando páginas com pseudo-classes e pseudo-elementos</a>
 
 ---
 
@@ -917,3 +918,12 @@ _Nota: para definir a altura o container precisa está com `flex-direction: colu
         /* 1            1          200px */
 }
 ```
+
+---
+
+# <p id="pseudo-classes-elementos">Estilizando páginas com pseudo-classes e pseudo-elementos</p>
+
+**pseudo-classe** - palavra adicionada junto ao seletor para definir como ele será estilizado.
+- alguns tipos de pseudo-classes: estado - estiliza elemento em um estado específico; ou estruturais - trabalham com a posição dos elementos.
+
+**pseudo-elementos** - palavra adicionada junto ao seletor para definir parte do elemento que será estilizada.
