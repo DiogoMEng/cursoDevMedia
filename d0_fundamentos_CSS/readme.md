@@ -927,3 +927,50 @@ _Nota: para definir a altura o container precisa está com `flex-direction: colu
 - alguns tipos de pseudo-classes: estado - estiliza elemento em um estado específico; ou estruturais - trabalham com a posição dos elementos.
 
 **pseudo-elementos** - palavra adicionada junto ao seletor para definir parte do elemento que será estilizada.
+
+## Pseudo-classes de Estado
+
+`hover` - ativa um estilo quando o mouse passa pelo elemento.
+
+```css
+a:hover {
+  background: #2b077a;
+  color: white;
+}
+```
+
+`visited` - altera o estilo de um link já acessado.
+
+```css
+a:visited {
+  color: red;
+}
+```
+
+## Pseudo-classes Estruturais
+
+`last-of-type` - aplica um estilo apenas no último elemento.
+
+```css
+p:last-of-type {
+  background-color: #6363c5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+p:nth-of-type(2) {
+  color: red;
+}
+```
+
+Tipos de **`of-type`**:
+1. `first`.
+2. `last`.
+3. `nth` - estiliza um elemento na posição indicada.
+    - outros valores aceitos: `odd` - aplica o estilo a todos os elementos ímpares; e `even` - estiliza os elementos pares.
+
+_Nota: of-type se refere ao elemento pai._
+
+`first-child` - aplica o estilo ao primeiro filho de um elemento.
+
+
