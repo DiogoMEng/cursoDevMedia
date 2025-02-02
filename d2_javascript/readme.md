@@ -20,8 +20,6 @@ Código da aplicação está dividido em arquivos diferentes.
 
 O Tipo de camada pode ser determinado de acordo com o seu contexto.
 
-![alt text](./img/image1.png)
-
 # <p id="refatoracao-js">Javascript: Refatoração</p>
 
 _Nota: na programação, refatorar significa melhorar o código sem alterar sua funcionalidade._
@@ -47,8 +45,6 @@ _OBS: as comadas de validação e exibição podem ser modificadas de acordo com
 # <p id="hierarquia-camadas-js">Javascript: Hierarquia de Camadas</p>
 
 Subcamadas - camada de apoio que auxilia de forma direta ou indireta uma camada de hierarquia maior.
-
-![alt text](./img/image2.png)
 
 # <p id="contextos-p2-js">Javascript: Contextos Parte 2</p>
 

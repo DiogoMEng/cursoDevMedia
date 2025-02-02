@@ -35,8 +35,6 @@ Benefícios:
 - software mais confiável.
 - menor tempo de desenvolvimento.
 
-![alt text](img/image1.png)
-
 Objetos de padrão MVC:
 
 1. Controller: interpreta entradas do usuário, e envia comandos para view ou model.
@@ -48,8 +46,6 @@ Objetos de padrão MVC:
 3. View: apresenta informações ao usuário.
    - visualização com o usuário.
    - interação user <-> application.
-
-![alt text](img/image2.png)
 
 Padrões variantes:
 

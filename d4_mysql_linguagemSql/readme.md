@@ -33,8 +33,6 @@ Criando um Schema:
 2. selecione um collation > clique em apply.
    - collation: conjunto de caracteres que o banco de dados possui internamente.
 
-![alt text](img/image1.png)
-
 _OBS: no arquivo my.ini possui as principais configurações presentes no mysql, como por exemplo, a localização de todos as bases de dados._
 
 ### Criação de Tabela
@@ -49,8 +47,6 @@ Etapas de criação:
      - mais utilizadas InnoDB e MyISAM. InnoDB, trabalha baseado em transações; e o MyISAM, vai dá look na tabela quando ocorrer necessidade de alteração.
 
 _Nota: o InnoDB sempre será indicado para base de dados que sofreram bastante alterações._
-
-![alt text](img/image2.png)
 
 Exemplo: Criação de tabela.</br>
 ![alt text](img/image12.png)
@@ -73,13 +69,11 @@ _Nota: o índice é uma forma que o banco de dados tem de organizar a estrutura 
 Comandos SQL:
 
 - Insert - comando utilizado para inserir um novo registro no banco.
-  ![alt text](img/image3.png)
 - Select - resgata informações da base de dados.</br>
   ![alt text](img/image4.png)
 
 ### Criação de Índices
 
-![alt text](img/image5.png)
 
 Exemplo: Criando um index.</br>
 ![alt text](img/image11.png)
@@ -89,14 +83,11 @@ Exemplo: deletando um index.</br>
 
 Índice Composto - definido quando temos mais de um campo formando um único índice.
 
-![alt text](img/image7.png)
 
 ### Criação de Chave Estrangeira
 
 Responsável pelo relacionamento entre as tabelas, por exemplo, a chave primária da tabela cliente pode está definida como chave estrangeira em uma tabela telefone.
 
-Exemplo: Criação de chave estrangeira.
-![alt text](img/image8.png)
 
 _OBS: não se pode deletar um registro que possua dependência, ou seja, não se pode excluir uma chave primária que está sendo utilizado para o relacionamento em outra tabela._
 
@@ -116,7 +107,6 @@ Etapas para Exportar os Dados:
 2. clique sobre management/administration > clique em data export.</br>
    ![alt text](img/image9.png)
 3. selecionar a base de dados > selecione a opção abaixo.
-   ![alt text](img/image10.png)
 
 ## <p id="introducao-linguagem-sql">Introdução a Linguagem SQL</p>
 
