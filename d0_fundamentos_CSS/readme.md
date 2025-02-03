@@ -971,6 +971,43 @@ Tipos de **`of-type`**:
 
 _Nota: of-type se refere ao elemento pai._
 
-`first-child` - aplica o estilo ao primeiro filho de um elemento.
+Tipos de **`child`**:
+1. `first-child` - aplica o estilo ao primeiro filho de um elemento.
+2. `last-child` - aplica o estilo ao último filho de um elemento.
+3. `nth-child` - aplica o estilo a uma posição específica de um filho de um elemento.
 
+```css
+p:first-child {
+  color: red;
+}
+```
 
+_Nota: da mesma forma que of-type, child também aceita os parâmetros odd e even para indicar valores ímpares e pares._
+
+`first-letter` - utilizado para estilizar a primeira letra de um texto.
+
+```css
+article::first-letter {
+  font-size: 32px;
+}
+```
+
+`first-line` - utilizado para estilizar a primeira linha de um elemento.
+
+```css
+article::first-letter {
+  font-size: 32px;
+}
+```
+
+`before/after` - adiciona um conteúdo novo antes/depois do conteúdo do elemento selecionado.
+
+```css
+a::before {
+  content: "link";
+}
+```
+
+> OBS: A PROPRIEDADE CONTENT É OBRIGATÓRIA QUANDO SE UTILIZA BEFORE.
+
+_Nota: por padrão `before` e `after` possui **display inline**, para exibir imagens será necessário modificar o display._
