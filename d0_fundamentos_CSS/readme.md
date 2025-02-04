@@ -559,9 +559,10 @@ body {
 `background-size` utilizada para ajustar o tamanho da imagem de fundo.
 
 Valores para propriedade acima:
-1. cover - imagem ocupa todo os espaço do elemento.
-2. contain - estica a imagem sem perder a proporção.
-3. 
+1. `cover` - imagem ocupa todo os espaço do elemento.
+2. `contain` - estica a imagem sem perder a proporção.
+3. `initial` - define a propriedade para o valor padrão.
+4. `inherit` - herda as propriedades do elemento pai.
 
 _Nota: a também a possibilidade de inserir valores para definir a porcentagem da tamanho do elemento._
 ```css
