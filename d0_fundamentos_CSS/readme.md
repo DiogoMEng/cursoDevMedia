@@ -13,6 +13,7 @@
 9. <a href="#posicionamento-relative-absolute">Posicionamento: Position Relative e Absolute</a>
 10. <a href="#flexbox">Flexbox</a>
 11. <a href="#pseudo-classes-elementos">Estilizando páginas com pseudo-classes e pseudo-elementos</a>
+12. <a href="#design-responsivo">Design Responsivo</a>
 
 ---
 
@@ -1012,3 +1013,11 @@ a::before {
 > OBS: A PROPRIEDADE CONTENT É OBRIGATÓRIA QUANDO SE UTILIZA BEFORE.
 
 _Nota: por padrão `before` e `after` possui **display inline**, para exibir imagens será necessário modificar o display._
+
+---
+
+# <p id="design-responsivo">Design Responsivo</p>
+
+Termo **Viewport** - área disponível para exibição de conteúdo que cada dispositivo possui.
+
+<A meta tag viewport possui um formato semelh>

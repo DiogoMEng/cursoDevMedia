@@ -74,3 +74,78 @@ header a {
 .secao-capa h1 {
   font-size: 80px;
 }
+
+.secao-capa h2 {
+  font-size: 35px;
+}
+
+.secao-capa h1, .secao-capa h2 {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+.secao-destaque img:first-of-type {
+  width: 100%;
+}
+
+.secao-destaque p::first-letter {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#pontos {
+  background: #e9e9e9;
+}
+
+p {
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 0px 0;
+}
+
+li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/Aula8/seta.png");
+  margin: 0 6px 0 0;
+}
+
+.galeria {
+  width: 100%;
+}
+
+.galeria img {
+  width: calc((100% / 3) - 3px);
+  opacity: 0.6;
+}
+
+.galeria img:hover {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin: 25px 0 0 0;
+  background: #f5c002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
