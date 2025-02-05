@@ -8,7 +8,7 @@
 4. <a href="#propriedades-css">Introdução: Propriedades</a>
 5. <a href="#seletores-css">Introdução: Seletores</a>
 6. <a href="#background">Background: Preenchendo o fundo de um elemento</a>
-7. <a href="#box-model">Box Model: Modificando elementos HTML</a>
+7. <a href="#box-model-modificando-elementos">Box Model: Modificando elementos HTML</a>
 8. <a href="#posicionamento-fixed">Posicionamento: Position Fixed</a>
 9. <a href="#posicionamento-relative-absolute">Posicionamento: Position Relative e Absolute</a>
 10. <a href="#flexbox">Flexbox</a>
@@ -593,7 +593,7 @@ body {
 
 ---
 
-# <p id="box-model">Box Model: Modificando elementos HTML</p>
+# <p id="box-model-modificando-elementos">Box Model: Modificando elementos HTML</p>
 
 **Valores relativos** - o elemento irá se adaptar de acordo com o tela do usuário.
 - valor definido com base em outro elemento.
