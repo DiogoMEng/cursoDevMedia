@@ -729,7 +729,7 @@ img {
   width: 250px;
   height: 250px;
   box-shadow:  20px     0      10px      30px    blue;
-          /* desl-x  desl-x  desfoque  expansão  cor*/
+          /* desl-x  desl-y  desfoque  expansão  cor*/
 }
 ```
 
