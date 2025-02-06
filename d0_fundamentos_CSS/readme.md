@@ -1020,4 +1020,66 @@ _Nota: por padrão `before` e `after` possui **display inline**, para exibir ima
 
 Termo **Viewport** - área disponível para exibição de conteúdo que cada dispositivo possui.
 
-<A meta tag viewport possui um formato semelh>
+```html
+<!-- DEFINE QUE A LARGURA DO VIEWPORT SERÁ A MESMA DO DISPOSITIVO -->
+<!-- E A ESCALA INICIAL SERÁ 1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+**Media Type**: designa as regras CSS serão interpretadas por um determinado dispositivo.
+
+Tipos de Media Type:
+1. `all` - todos os dispositivos.
+2. `braille` - dispositivos táteis.
+3. `embossed` - disp. que impremem em braille.
+4. `handheld` - disp. de mão.
+5. `print` - disp. de impressão.
+6. `projection` - apresentação do tipo slides.
+7. `screen` - monitores ou disp. de telas coloridas.
+8. `speech` - sintetizadores de voz ou leitores de tela.
+9. `TTY` - terminais, teletypes e dispositivos portáteis.
+10. `TV.` - televisores ou disp. de baixa resolução.
+
+```html
+<link rel="stylesheet" href="arquivo.css" type="text/css" media="print" >
+```
+
+```css
+@media screen {
+
+  body {
+
+    background-color: #f00;
+
+  }
+
+}
+```
+
+> OBS: A FUNCIONALIDADE ACIMA SE TORNOU OBSOLETA, SOMENTE SENDO UTILIZADA COM `SCREEN` E `PRINT`.
+
+**Media query**: forma base de todo layout responsivo.
+
+![alt text](img/image16.png)
+
+![alt text](img/image17.png)
+
+Operadores para combinar Media Types com Media Features:
+- `not` - utilizado quando o resultado desejado seja oposto ao real.
+- `only` - previne que navegadores antigos tentem processar expressões.
+- `and` - utilizado com expressões múltiplas.
+- `","` - utilizado para juntar duas ou mais expressões diferentes.
+
+```css
+@media not print and  (min-width: 768px) {
+
+  body {
+
+    background-color: #ff0000;
+
+  }
+
+}
+```
+
+<Neste exemplo, todos os dispositivos que não forem do tipo print>
