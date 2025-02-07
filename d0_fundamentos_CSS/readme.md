@@ -1080,6 +1080,33 @@ Operadores para combinar Media Types com Media Features:
   }
 
 }
+
+/* Only - faz com que nem todos os dispositivos executem a expressão */
+
+@media only screen and (max-width: 320px) {
+
+  h1 {
+
+    text-decoration: underline;
+
+  }
+
+}
 ```
 
-<Neste exemplo, todos os dispositivos que não forem do tipo print>
+**BREAKPOINTS** - delimitadores de regras CSS para atenderem diferentes especificações, criadas pelo uso de media queries.
+- Blocos previamente definidos.
+
+## Media Queries
+
+```css
+/* # SINTAXE # */
+@media [not|only] [media type] and ([query]) {
+  estilos
+}
+```
+
+_Nota: operadores not e only, permitem negar um tipo de mídia, ou especificar que apenas determinado tipo seja atendido, respectivamente._
+
+## Desenvolvimento Responsivo: como resetar os estilos com CSS
+
