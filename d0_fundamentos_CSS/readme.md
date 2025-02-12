@@ -747,7 +747,7 @@ img {
 
 ---
 
-# <p id="posicionamento-fixed">Posicionamento: Position Fixed</ṕ>
+# <p id="posicionamento-fixed">Posicionamento: Position Fixed</p>
 
 _Nota: os elementos podem ficam fixos na página mesmo após o scroll._
 
