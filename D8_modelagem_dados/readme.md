@@ -74,3 +74,5 @@ No diagrama entidade relacionamento, as `entidades` são representadas por retâ
 
 2. <p id="introducao-modelagem-dados">Modelagem de Dados: Introdução</p>
 
+_Node: modelos nada mais são do que abstrações do mundo real._
+- representação simplificado de um problema.
