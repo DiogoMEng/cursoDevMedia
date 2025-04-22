@@ -5,6 +5,7 @@
 1. <a href="#conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</a>
 2. <a href="#introducao-modelagem-dados">Modelagem de Dados: Introdução</a>
 3. <a href="#operadores-modelagem-dados">Modelagem de Dados: Utilização de Operadores</a>
+4. <a href="#chaves-modelagem-dados">Modelagem de Dados: Chaves</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -175,3 +176,20 @@ _Nota: o nome dos relacionamentos devem ser como verbos._
 Quando todos os elementos de uma entidade estão presente no relacionamento, sua
 contribuição é `total`. Caso contrário, o relacionamento será considerado `parcial`.
 
+_Nota: O conceito de agregação surge na necessidade de diluir relacionamentos ternários._
+
+![alt text](public/img/relacionamentosMultiplos/image1.png)
+
+---
+
+# <p id="chaves-modelagem-dados">Modelagem de Dados: Chaves</p>
+
+Se houver outro atributo além da chave primária dentro da entidade que seja único, este pode ser chamado de chave alternativa
+
+**Chave primária** - atributo que possui valor único dentro da entidade, normalmente utilizado para criar relacionamentos.
+
+> OBS: se não houver um atributo com as características acima, é possível criar uma chave primária composta.
+
+![alt text](public/img/chaves/image1.png)
+
+10:30
