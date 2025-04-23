@@ -6,6 +6,7 @@
 2. <a href="#introducao-modelagem-dados">Modelagem de Dados: Introdução</a>
 3. <a href="#operadores-modelagem-dados">Modelagem de Dados: Utilização de Operadores</a>
 4. <a href="#chaves-modelagem-dados">Modelagem de Dados: Chaves</a>
+5. <a href="#mer-modelagem-dados">Modelagem de Dados: M.E.R</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -192,4 +193,10 @@ Se houver outro atributo além da chave primária dentro da entidade que seja ú
 
 ![alt text](public/img/chaves/image1.png)
 
-10:30
+![alt text](public/img/chaves/image2.png)
+
+---
+
+# <p id="mer-modelagem-dados">Modelagem de Dados: M.E.R</p>
+
+![alt text](public/img/mer/image1.png)
