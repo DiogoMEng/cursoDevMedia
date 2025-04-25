@@ -200,3 +200,5 @@ Se houver outro atributo além da chave primária dentro da entidade que seja ú
 # <p id="mer-modelagem-dados">Modelagem de Dados: M.E.R</p>
 
 ![alt text](public/img/mer/image1.png)
+
+![alt text](public/img/mer/model_rh.png)
