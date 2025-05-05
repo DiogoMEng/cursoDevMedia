@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Possuiv2" directorySegmentName="seg_0" id="A5E55409-D309-78CB-E8DE-E20B6C7E0D1F">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-02-04 18:47:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<engineerTo>
+<item key="1D60A632-A5B5-83EC-2B0A-67C784AFD4AF" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F8DEF14E-2BED-A9E5-6EB4-5ECC7E18898D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E166144-CF62-6BEB-7DA4-FDB31377E724</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Lote" id="ABCCBA98-188D-A5EA-F119-FA29E72BB103">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-02-10 12:46:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<engineerTo>
+<item key="1D60A632-A5B5-83EC-2B0A-67C784AFD4AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</attribute>
+<attribute name="Localização" id="78EB76CB-D773-A0CF-CD3F-DE7A31785BDA">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-02-10 12:46:12 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<engineerTo>
+<item key="1D60A632-A5B5-83EC-2B0A-67C784AFD4AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</attribute>
+</attributes>
+</Relation>

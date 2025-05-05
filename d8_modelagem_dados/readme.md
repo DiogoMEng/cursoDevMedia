@@ -2,11 +2,14 @@
 
 ## SUMÁRIO
 
-1. <a href="#conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</a>
-2. <a href="#introducao-modelagem-dados">Modelagem de Dados: Introdução</a>
-3. <a href="#operadores-modelagem-dados">Modelagem de Dados: Utilização de Operadores</a>
-4. <a href="#chaves-modelagem-dados">Modelagem de Dados: Chaves</a>
-5. <a href="#mer-modelagem-dados">Modelagem de Dados: M.E.R</a>
+Parte 1: <a href="#conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</a>
+
+Parte 2: <a href="#introducao-etapa-conceitual-modelagem-dados">Modelagem de Dados: Etapa Conceitual</a>
+- <a href="#operadores-modelagem-dados">Utilização de Operadores</a>
+- <a href="#chaves-modelagem-dados">Chaves</a>
+- <a href="#mer-modelagem-dados">M.E.R</a>
+
+Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: Etapa Lógica</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -75,7 +78,7 @@ No diagrama entidade relacionamento, as `entidades` são representadas por retâ
 
 ---
 
-# <p id="introducao-modelagem-dados">Modelagem de Dados: Introdução</p>
+# <p id="introducao-etapa-conceitual-modelagem-dados">Modelagem de Dados: Etapa Conceitual</p>
 
 _Node: modelos nada mais são do que abstrações do mundo real._
 - representação simplificado de um problema.
@@ -193,12 +196,32 @@ Se houver outro atributo além da chave primária dentro da entidade que seja ú
 
 ![alt text](public/img/chaves/image1.png)
 
-![alt text](public/img/chaves/image2.png)
-
 ---
 
 # <p id="mer-modelagem-dados">Modelagem de Dados: M.E.R</p>
 
 ![alt text](public/img/mer/image1.png)
 
-![alt text](public/img/mer/model_rh.png)
+**Especialização de Entidades**: quando temos no conjunto de elementos caracteristicas comuns e específicos.
+
+![alt text](public/img/mer/image2.png)
+
+**Entidades fracas**: necessitam de outra entidade para existirem.
+- Um exemplo disso seria uma entidade de dependentes que não poderia existir sem a entidade pai.
+- conferem mais clareza ao modelo.
+- representada por um retângulo de borda dupla.
+
+_Nota: entidades = substantivos, atributos = adjetivos, relacionamentos = verbos; e atributos de relacionamentos = advérbios._
+
+---
+
+# <p id="introducao-etapa-logica-modelagem-dados">Modelagem de Dados: Etapa Lógica</p>
+
+**Regras de Normalização**: reduz os riscos de integridade dos dados mitigando redundâncias.
+
+_Nota: em um relacionamento `1:N`, a chave estrangeira deve ser inserida do lado N da relação._
+
+**Normalização** etapas utilizadas para detectar e corrigir possíveis redundâncias de dados.
+- quanto mais normalizado um modelo, mais independentes entre si serão seus dados.
+
+04:42
