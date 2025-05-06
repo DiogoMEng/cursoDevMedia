@@ -10,6 +10,8 @@ Parte 2: <a href="#introducao-etapa-conceitual-modelagem-dados">Modelagem de Dad
 - <a href="#mer-modelagem-dados">M.E.R</a>
 
 Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: Etapa Lógica</a>
+- <a href="#normalizacao-anomalias">Normalização e Anomalias</a>
+- <a href="#primeira-forma-normal">Primeira Forma Normal</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -221,7 +223,19 @@ _Nota: entidades = substantivos, atributos = adjetivos, relacionamentos = verbos
 
 _Nota: em um relacionamento `1:N`, a chave estrangeira deve ser inserida do lado N da relação._
 
-**Normalização** etapas utilizadas para detectar e corrigir possíveis redundâncias de dados.
+**Normalização**: etapas utilizadas para detectar e corrigir possíveis redundâncias de dados.
 - quanto mais normalizado um modelo, mais independentes entre si serão seus dados.
 
-04:42
+**Dependência funcional**: quando em um conjunto de atributos existir um atributo A1 dependendo de um atributo A2, de modo que
+a cada valor de A1, temos valores diferentes de A2.
+
+# <p id="normalizacao-anomalias">Normalização e Anomalias</p>
+
+O processo deve ser aplicado para eliminar anomalias.
+
+**Tipos de Anomalias**:
+1. **Inserção** - dados não possuem independência.
+2. **Atualização** - presença de redundâncias.
+3. **Exclusão** - dados não podem ser excluídos, a não ser que outros sejam eliminados.
+
+# <p id="primeira-forma-normal">Primeira Forma Normal</p>
