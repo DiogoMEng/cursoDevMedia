@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDADD5CE-B25D-2DA1-BEA7-4B52C75CFC02" name="Cliente">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>5221B893-93B9-1FA3-CDCE-3460950DC457</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPF" id="DD7EA074-B1C0-F202-E6C6-8942BE829648">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>3E85BA1D-1EC1-6F96-7A2B-52A0F4078770</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="BB0F8ABC-9835-46AE-1E6B-576451477195">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>FEC03965-6368-F9C6-B571-77D0C8BEA854</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumCelular" id="F437942C-9EF4-34AC-7021-9F09A2E57B4A">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>66A68569-FAA7-4A6A-E3CC-D8D68C56DBC5</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereço*" id="199B4043-AF4D-8E00-A195-0E3B512CCE39">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>4306460B-9A5D-C44C-47FD-CEB1DD814C0D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefones*" id="C25CF130-7802-18E9-0F67-5E25E1298F8E">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>D1081CDC-3D1C-FFDF-1270-25F336D1EEDE</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C79A9652-7C93-DA0D-33D6-8C04F9C849BB" name="Cliente_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>4A4CADC0-3725-4A1A-55BC-F673BCEBDAA8</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD7EA074-B1C0-F202-E6C6-8942BE829648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D44FEF36-D1DA-0856-6060-D689FF5104BD" name="Buscav1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>4F17DD23-FC11-EFF2-9D29-1CFE8646B87D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

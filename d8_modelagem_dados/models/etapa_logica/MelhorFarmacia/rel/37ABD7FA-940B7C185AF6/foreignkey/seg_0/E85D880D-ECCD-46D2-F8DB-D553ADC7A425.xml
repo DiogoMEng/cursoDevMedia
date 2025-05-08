@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E85D880D-ECCD-46D2-F8DB-D553ADC7A425" containerWithKeyObject="BDADD5CE-B25D-2DA1-BEA7-4B52C75CFC02" localFKIndex="D44FEF36-D1DA-0856-6060-D689FF5104BD" name="Buscav1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>4F17DD23-FC11-EFF2-9D29-1CFE8646B87D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD896633-3DF0-104F-08B3-9615434C47F2</referredTableID>
+<keyObject>A42101D2-21A7-FDBA-2849-9293C04F6720</keyObject>
+<referredKeyID>A42101D2-21A7-FDBA-2849-9293C04F6720</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

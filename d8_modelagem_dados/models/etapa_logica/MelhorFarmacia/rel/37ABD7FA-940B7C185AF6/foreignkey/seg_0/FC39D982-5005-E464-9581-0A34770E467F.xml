@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC39D982-5005-E464-9581-0A34770E467F" containerWithKeyObject="AD896633-3DF0-104F-08B3-9615434C47F2" localFKIndex="4E2353FA-AEC1-23B0-5EA2-F9B1DDDB1114" name="Fornecev3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<arc>8ABC6030-2893-CFB6-7078-AD465672EE98</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A31928E4-FCAC-3556-3329-126122C1CCC9</referredTableID>
+<keyObject>2970347E-FA05-4BF6-995C-F4241EFD44B8</keyObject>
+<referredKeyID>2970347E-FA05-4BF6-995C-F4241EFD44B8</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

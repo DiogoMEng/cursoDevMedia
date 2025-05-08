@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="D3882DE7-A49C-C1A4-68E2-61B0A05383BF" name="FKArc_1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<mandatory>true</mandatory>
+<table>AD896633-3DF0-104F-08B3-9615434C47F2</table>
+<fkeys>
+<fkeyID>6D92DB1B-2CDE-D53D-9C9B-4F11E3F48E2E</fkeyID>
+<fkeyID>F641C065-4A2D-8DC8-34CE-73B14534DA43</fkeyID>
+</fkeys>
+</FKArc>

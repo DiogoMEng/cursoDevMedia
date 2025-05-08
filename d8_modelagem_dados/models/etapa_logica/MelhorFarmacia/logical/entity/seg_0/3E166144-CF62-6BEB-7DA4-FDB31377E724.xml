@@ -5,7 +5,7 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -23,9 +23,10 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="RazaoSocial" id="EDCE229B-4F18-06E9-2624-32E4184BBE76">
 <createdBy>Eduardo</createdBy>
@@ -33,11 +34,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

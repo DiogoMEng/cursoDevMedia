@@ -1,0 +1,237 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD896633-3DF0-104F-08B3-9615434C47F2" name="Produto">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>F8DEF14E-2BED-A9E5-6EB4-5ECC7E18898D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdProduto" id="E9CC1195-3401-C14C-C5E6-A18F518FBC6B">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>16F0610A-F787-5389-8136-7D96D3BF8F51</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="F893831F-C10E-6E3C-ADA2-F97B7DA0EFE1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>BF2581A5-A68A-8DC4-F1D1-3F5901322999</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="6038A1E0-DEDF-1BC1-3FE3-708FCC8CEFF3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<comment>higiene pessoal, medicamento, beleza, infantil</comment>
+<generatorID>AFF1A13F-2E25-8D44-FCBF-B6E7605205EA</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descrição" id="CB9A7B12-D6F3-394E-6AE7-D8E20D273CDB">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>DF6215F1-26D9-7EA2-A071-416E738AD4F4</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Preco" id="7651B0E6-EEBB-F0E6-3CB0-C6D5927FDE49">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>7FDA318A-3866-40F0-6CE5-A364CC935A32</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Filial_idFilial" id="7AEB4367-0436-A1CB-B6A1-61B219E89641">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D92DB1B-2CDE-D53D-9C9B-4F11E3F48E2E" referredColumn="A2E423AE-7F8F-CA3C-A7D2-11E2654BD98F"/>
+</associations>
+</Column>
+<Column name="Farmacia_Farmacia_ID" id="31252A3D-9BB1-E666-B079-A8639281309B">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F641C065-4A2D-8DC8-34CE-73B14534DA43" referredColumn="97F77425-5E33-95CD-1939-6A1F0A4BE064"/>
+</associations>
+</Column>
+<Column name="DataInicio" id="A72F39C8-7871-E67C-CAAA-2C4527C61F4D">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>30020311-45FE-173E-1168-DA5912C291A7</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>F641C065-4A2D-8DC8-34CE-73B14534DA43</dependOnForeignKeyID>
+</Column>
+<Column name="DataFim" id="868ADF7B-A5DE-64A5-7013-04BDD9F8463A">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>801DCFEF-EB67-1F4B-25A5-66D9AD760C96</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>F641C065-4A2D-8DC8-34CE-73B14534DA43</dependOnForeignKeyID>
+</Column>
+<Column name="Desconto" id="39625ACB-8909-C2D2-8F21-B968737682DD">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>AAD5EC13-4DBA-7449-855F-9776528CFC64</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>F641C065-4A2D-8DC8-34CE-73B14534DA43</dependOnForeignKeyID>
+</Column>
+<Column name="Filial_idFilial1" id="173FCF72-E2B0-86CC-EEB6-1AADA659B996">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83755BC1-CF59-9C87-6E2A-9BA3DA1902B5" referredColumn="A2E423AE-7F8F-CA3C-A7D2-11E2654BD98F"/>
+</associations>
+</Column>
+<Column name="Farmacia_Farmacia_ID1" id="5024B2C8-8D27-5F9A-0ED4-720D58675178">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC39D982-5005-E464-9581-0A34770E467F" referredColumn="97F77425-5E33-95CD-1939-6A1F0A4BE064"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A42101D2-21A7-FDBA-2849-9293C04F6720" name="Produto_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>520EA783-E2FB-3605-0C6E-0330C6E9122C</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9CC1195-3401-C14C-C5E6-A18F518FBC6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0FD46FB-0093-2DB7-67E4-0D823280608E" name="Anunciav1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>8AB80E9E-872F-7570-2295-4F4DB5873DF4</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AEB4367-0436-A1CB-B6A1-61B219E89641"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DE47CCB-2756-0F9F-113D-5121D75D0EFC" name="Anunciav3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>8AB80E9E-872F-7570-2295-4F4DB5873DF4</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31252A3D-9BB1-E666-B079-A8639281309B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53C3B7B2-76C8-85D4-7D1E-7C81D83FC962" name="Busca">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>4F17DD23-FC11-EFF2-9D29-1CFE8646B87D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="B50C3965-2F9A-7F7B-3DBD-977FAE037C66" name="Fornecev1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="173FCF72-E2B0-86CC-EEB6-1AADA659B996"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E2353FA-AEC1-23B0-5EA2-F9B1DDDB1114" name="Fornecev3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5024B2C8-8D27-5F9A-0ED4-720D58675178"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAEB5E32-06BD-90E3-8001-78AB7C3B3676" name="Promove">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>9AF85B51-AC9E-87FB-1B8E-6D0A8A53B596</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

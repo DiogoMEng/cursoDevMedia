@@ -239,3 +239,12 @@ O processo deve ser aplicado para eliminar anomalias.
 3. **Exclusão** - dados não podem ser excluídos, a não ser que outros sejam eliminados.
 
 # <p id="primeira-forma-normal">Primeira Forma Normal</p>
+
+**Etapas**:
+1. Identificação de chave primária.
+2. Atributos estruturados.
+3. Atributos Multivalorados.
+4. Criação de Novas tabelas.
+
+**1ª Forma Normal** - todos os atributos de uma relação são campos elementares.
+- Todos os campos devem ser funcionalmente dependentes da relação, fora a chave primária.

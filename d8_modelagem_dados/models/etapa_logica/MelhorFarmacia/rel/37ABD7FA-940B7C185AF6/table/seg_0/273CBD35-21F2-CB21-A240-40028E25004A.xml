@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="273CBD35-21F2-CB21-A240-40028E25004A" name="Filial">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>5DE6E017-BB78-85DD-B8CD-7D83661B4335</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idFilial" id="A2E423AE-7F8F-CA3C-A7D2-11E2654BD98F">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>4D8008CF-5EE5-E030-684E-F20323BCFE5F</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco" id="CF1A2496-C226-18EE-7D66-F563BD6ED88D">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>426D6CB5-845D-F0AD-830E-EC84772B3B4B</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DataInicio" id="E6A51A02-E3E2-AF04-1B7F-A7E4CCFC8DA6">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>30020311-45FE-173E-1168-DA5912C291A7</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>805FDDCD-81BB-6B92-E559-4BFBB710F88C</dependOnForeignKeyID>
+</Column>
+<Column name="DataFim" id="8C3F22F1-282D-08E7-07B1-C2E61961D965">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>801DCFEF-EB67-1F4B-25A5-66D9AD760C96</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>805FDDCD-81BB-6B92-E559-4BFBB710F88C</dependOnForeignKeyID>
+</Column>
+<Column name="Desconto" id="CCF024DA-FE0F-2FD1-E71A-A2D8F581D4F9">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>AAD5EC13-4DBA-7449-855F-9776528CFC64</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>805FDDCD-81BB-6B92-E559-4BFBB710F88C</dependOnForeignKeyID>
+</Column>
+<Column name="Farmacia_Farmacia_ID" id="3D6328DA-4658-3934-CC49-1234B1757C47">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C17D3A8B-6222-A304-84C2-C01128B5959B" referredColumn="97F77425-5E33-95CD-1939-6A1F0A4BE064"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDC7A05A-E96E-D00F-B22C-6B79472A4DB8" name="Filial_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:47 UTC</createdTime>
+<generatorID>1068E17B-8082-6D39-5586-BBB5DEC5D1C8</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2E423AE-7F8F-CA3C-A7D2-11E2654BD98F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9A7BA19-1BBE-0DDA-1D81-ABCE5D0044AB" name="Anuncia">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>8AB80E9E-872F-7570-2295-4F4DB5873DF4</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="18EA5FF5-A0E8-66F9-254C-D1D5DA470768" name="Fornece">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="306FDE6D-BD8A-8DC2-1495-5141615A2CF9" name="Filial_Farmacia_FK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>5FE7D355-089D-D5F5-82EC-4C60B5DF8B2D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D6328DA-4658-3934-CC49-1234B1757C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A104FE6-739C-2BC8-A2B2-40D2AA6E9D4A" name="Promovev1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-08 18:43:48 UTC</createdTime>
+<generatorID>9AF85B51-AC9E-87FB-1B8E-6D0A8A53B596</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -5,7 +5,7 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,10 +22,11 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nome" id="BF2581A5-A68A-8DC4-F1D1-3F5901322999">
 <createdBy>Eduardo</createdBy>
@@ -33,11 +34,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Tipo" id="AFF1A13F-2E25-8D44-FCBF-B6E7605205EA">
 <createdBy>Eduardo</createdBy>
@@ -46,11 +48,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Descrição" id="DF6215F1-26D9-7EA2-A071-416E738AD4F4">
 <createdBy>Eduardo</createdBy>
@@ -58,11 +61,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Preco" id="7FDA318A-3866-40F0-6CE5-A364CC935A32">
 <createdBy>Eduardo</createdBy>
@@ -70,11 +74,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -84,7 +89,7 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <engineerTo>
-<item key="8ED59821-6963-5AE0-4BE6-E601DD1A6473" value="true"/>
+<item key="37ABD7FA-D3ED-980B-5B97-940B7C185AF6" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

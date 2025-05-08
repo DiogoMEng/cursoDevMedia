@@ -1,12 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="788C2446-237B-7A1B-0E8A-34DE28DC2AE4">
 <createdBy>Eduardo</createdBy>
+<modifiedBy>diogomello</modifiedBy>
 <createdTime>2015-01-14 18:01:05 UTC</createdTime>
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
 <showLegend>false</showLegend>
 <showLabels>false</showLabels>
 <showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
@@ -68,14 +70,6 @@
 <points>
 <point x="316" y="136"/>
 <point x="316" y="348"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A5E55409-D309-78CB-E8DE-E20B6C7E0D1F" otype="Relation" vid_source="F87FF05E-D497-D385-E479-C738A7157A17" vid_target="56CD8CB0-4312-0499-B1FB-95A3AF7CD9EB">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<lineWidth>1</lineWidth>
-<points>
-<point x="196" y="348"/>
-<point x="196" y="134"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVInheritanceRelation" oid="FF97A0C3-361E-D853-C72E-8909D8F645E5" otype="Hierarchy relation" vid_source="99EDCE8F-6B16-E5A4-0619-39DED66ED3D3" vid_target="7AF8B1F1-9AA4-9939-8968-96B85AFB179B">
