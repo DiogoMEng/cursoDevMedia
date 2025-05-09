@@ -40,16 +40,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Endereço*" id="199B4043-AF4D-8E00-A195-0E3B512CCE39">
-<createdBy>diogomello</createdBy>
-<createdTime>2025-05-08 18:43:47 UTC</createdTime>
-<generatorID>4306460B-9A5D-C44C-47FD-CEB1DD814C0D</generatorID>
-<ownerDesignName>MelhorFarmacia</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Telefones*" id="C25CF130-7802-18E9-0F67-5E25E1298F8E">
 <createdBy>diogomello</createdBy>
 <createdTime>2025-05-08 18:43:47 UTC</createdTime>
@@ -57,6 +47,86 @@
 <ownerDesignName>MelhorFarmacia</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Logradouro" id="9D730E8D-E212-67B5-3D62-37C246A78F1F">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero" id="5606598D-7B29-F395-4BA7-D308D4CCB397">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Complemento" id="9BDEAC30-5BD4-7AD2-6319-6EFF63583612">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro" id="AE88A2AC-4DA7-8EB2-4CA3-6F1E0BFE6151">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="9B719EAB-5B4D-1172-BFD2-B28AB8B66C19">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cidade" id="B6E85C01-AB0A-0777-4C57-EC481D371E4D">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Municipio" id="9883567C-E1DB-4028-F499-B092E7BCB4C7">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="C780BB9A-73F4-1CDB-8FC2-2C7B6A0C2F5E">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-09 12:38:31 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

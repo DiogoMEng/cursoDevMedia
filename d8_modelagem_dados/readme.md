@@ -248,3 +248,13 @@ O processo deve ser aplicado para eliminar anomalias.
 
 **1ª Forma Normal** - todos os atributos de uma relação são campos elementares.
 - Todos os campos devem ser funcionalmente dependentes da relação, fora a chave primária.
+- Na presença de atributo compostos, deve-se gerar uma nova tabela.
+- Na presença de atributo multivalorados, deve-se gerar uma nova tabela.
+
+| **Tabela Desnormalizada --> 1FN** |
+|-----------------------------------|
+
+![alt text](public/img/primeiraFN/image1.png)
+
+![alt text](public/img/primeiraFN/image2.png)
+
