@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEAA1ADD-B0CD-B8CA-7553-BD4C64130249" name="Matricula">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>40C11743-3B12-8EDA-FD3D-FB8D9C1BCFB6</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Matricula" id="8D28F71C-2C24-6816-0EFE-BBC254528370">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>F247C77F-A85D-D6F5-18C2-A562EE9A39C4</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota" id="FB362B8E-4F16-FE3D-625F-20FA6A1E61ED">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>4F83EFAA-F3B0-D0B9-A44C-9F282027BCA6</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Turma_Cod_turma" id="6BCDD6FB-9DCE-EC73-A156-C619671BD1C5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>FFA05A7A-710E-53D5-E3D3-6F87F228FE3A</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="054071A2-A779-B39D-0E4A-CFC0A5851432" referredColumn="EFED44F2-8AF0-BE61-4CF1-17650E94968C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4FCA4A74-5DC6-50F1-F0B3-576EECDCE0D7" name="Matricula_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>7843E039-9C7A-2FB8-D983-BAD0FB637E81</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D28F71C-2C24-6816-0EFE-BBC254528370"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B17D0A3B-5873-20DE-2C2E-B59E0900A57B" name="Matricula_Turma_FK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>75CF6584-BA2D-A385-1A3C-503DED7D099F</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BCDD6FB-9DCE-EC73-A156-C619671BD1C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

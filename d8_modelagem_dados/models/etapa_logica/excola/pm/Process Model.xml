@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="5A11605B-7A4E-FD46-4472-8D6B246DC0C6">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:02:57 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="40C11743-3B12-8EDA-FD3D-FB8D9C1BCFB6" name="Matricula">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:02 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Matricula" id="F247C77F-A85D-D6F5-18C2-A562EE9A39C4">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:17 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nota" id="4F83EFAA-F3B0-D0B9-A44C-9F282027BCA6">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:24 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cod_turma" id="FFA05A7A-710E-53D5-E3D3-6F87F228FE3A">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:18:23 UTC</createdTime>
+<generatorID>75CF6584-BA2D-A385-1A3C-503DED7D099F</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81322FCF-2974-410C-6533-5CADD9BDA2AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7843E039-9C7A-2FB8-D983-BAD0FB637E81" name="Matricula PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:22 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F247C77F-A85D-D6F5-18C2-A562EE9A39C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

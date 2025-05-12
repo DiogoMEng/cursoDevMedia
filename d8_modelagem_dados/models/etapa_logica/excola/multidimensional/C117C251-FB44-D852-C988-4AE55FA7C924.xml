@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<MultidimensionalDesign class="oracle.dbtools.crest.model.design.multidimensional.MultidimensionalDesign" name="Multidimensional_1" id="C117C251-FB44-D852-C988-4AE55FA7C924" mainViewID="A7AD839D-E418-FF8B-5D1A-F38C7B5D589B" boundModel="5FCF142A-1842-273F-1DCC-CEB6C15CD909">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:14:29 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</MultidimensionalDesign>

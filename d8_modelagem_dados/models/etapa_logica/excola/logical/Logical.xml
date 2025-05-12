@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5FCF142A-1842-273F-1DCC-CEB6C15CD909" mainViewID="E1F1EA4F-0F5E-F94A-3701-D3D69C066773">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:02:56 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

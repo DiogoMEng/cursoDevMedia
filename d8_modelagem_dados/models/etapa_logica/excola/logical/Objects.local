@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="40C11743-3B12-8EDA-FD3D-FB8D9C1BCFB6" name="Matricula" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5FCF142A-1842-273F-1DCC-CEB6C15CD909" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B20AB106-04BE-519A-4C25-7CD7E73B54FD" name="Turma" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5FCF142A-1842-273F-1DCC-CEB6C15CD909" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="75CF6584-BA2D-A385-1A3C-503DED7D099F" name="Relation_1" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="5FCF142A-1842-273F-1DCC-CEB6C15CD909" propertySourceId="B20AB106-04BE-519A-4C25-7CD7E73B54FD" propertyTargetId="40C11743-3B12-8EDA-FD3D-FB8D9C1BCFB6"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

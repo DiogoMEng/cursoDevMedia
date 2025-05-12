@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="054071A2-A779-B39D-0E4A-CFC0A5851432" containerWithKeyObject="CEAA1ADD-B0CD-B8CA-7553-BD4C64130249" localFKIndex="B17D0A3B-5873-20DE-2C2E-B59E0900A57B" name="Matricula_Turma_FK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:19:32 UTC</createdTime>
+<generatorID>75CF6584-BA2D-A385-1A3C-503DED7D099F</generatorID>
+<ownerDesignName>excola</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55E76A51-245C-051E-1012-2768A530A621</referredTableID>
+<keyObject>C96603F1-8DDC-5318-F325-092CAECC152D</keyObject>
+<referredKeyID>C96603F1-8DDC-5318-F325-092CAECC152D</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

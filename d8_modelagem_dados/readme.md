@@ -12,6 +12,7 @@ Parte 2: <a href="#introducao-etapa-conceitual-modelagem-dados">Modelagem de Dad
 Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: Etapa Lógica</a>
 - <a href="#normalizacao-anomalias">Normalização e Anomalias</a>
 - <a href="#primeira-forma-normal">Primeira Forma Normal</a>
+- <a href="#segunda-forma-normal">Segunda Forma Normal</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -258,3 +259,6 @@ O processo deve ser aplicado para eliminar anomalias.
 
 ![alt text](public/img/primeiraFN/image2.png)
 
+# <p id="segunda-forma-normal">Segunda Forma Normal</p>
+
+A relação tem todos os seus atributos, fora da chave primária, forem dependentes funcionais totais dela.

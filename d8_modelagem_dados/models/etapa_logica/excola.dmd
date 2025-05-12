@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="excola" id="FEE4B74A-B07A-D302-CA78-789DBDD98611" version="3.5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:02:56 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FEE4B74A-B07A-D302-CA78-789DBDD98611</designId>
+</OSDM_Design>

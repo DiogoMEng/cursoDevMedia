@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B20AB106-04BE-519A-4C25-7CD7E73B54FD" name="Turma">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:34 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cod_turma" id="81322FCF-2974-410C-6533-5CADD9BDA2AB">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:44 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sala" id="E3B6064F-213C-BBDC-8AD5-CFDBACA18824">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:53 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98866EFF-5683-1AB4-B3B5-9A131EDAC119" name="Turma PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-12 15:17:51 UTC</createdTime>
+<ownerDesignName>excola</ownerDesignName>
+<engineerTo>
+<item key="90AF4880-A4F6-A0B2-E580-93850FD34224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81322FCF-2974-410C-6533-5CADD9BDA2AB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
