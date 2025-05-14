@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E3D43E0-08F0-58F9-7B4D-1E4F85DE3BAA" name="Aluno">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:01:41 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Matricula" id="0F92C27D-845C-664C-7534-2E126046D7AB">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="DD92DC4E-50E3-775B-8BDF-22F905EE83AD">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG" id="943140D7-BA02-5B87-943C-14C7F2A8FD73">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Logradouro" id="3700532F-EEA1-0274-D7F6-0CF2B2E8DE3B">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero" id="DEB28C7B-CB9A-9891-F2EC-C46111863C54">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Complemento" id="E331594F-CAC8-ACC3-07C1-3BD61B805416">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro" id="66A1E2FF-5F0E-D147-73C6-F2570D27386C">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIdade" id="592D7304-E3B7-3709-1276-DAB8E2746DD7">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="705A8ED7-FD85-5138-EA74-15EA3CD2CC86">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7ED17843-204D-D0D1-BDAB-CA513B447F7D" name="Aluno_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F92C27D-845C-664C-7534-2E126046D7AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

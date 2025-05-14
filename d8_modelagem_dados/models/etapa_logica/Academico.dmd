@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Academico" id="A30A9A10-D240-E9F4-FEE0-0368AAAEAA37" version="3.5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 16:53:09 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A30A9A10-D240-E9F4-FEE0-0368AAAEAA37</designId>
+</OSDM_Design>

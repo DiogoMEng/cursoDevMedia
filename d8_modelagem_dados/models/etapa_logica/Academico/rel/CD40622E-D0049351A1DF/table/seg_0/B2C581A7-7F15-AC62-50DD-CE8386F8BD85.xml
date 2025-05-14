@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2C581A7-7F15-AC62-50DD-CE8386F8BD85" name="Locais">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:05:26 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UF" id="3393179E-81DD-98E2-F6CB-CD6A27E490B3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:05:58 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cidade" id="1EC4BE01-A121-AAC1-D438-8B5B87B96BC6">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:05:58 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idLocal" id="084ACE4C-6171-96C7-9D77-BD82ECE856F7">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:06:19 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFD8ADD3-542F-AC6A-81AC-997C420012B2" name="Locais_PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:06:19 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="084ACE4C-6171-96C7-9D77-BD82ECE856F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

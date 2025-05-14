@@ -13,6 +13,7 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 - <a href="#normalizacao-anomalias">Normalização e Anomalias</a>
 - <a href="#primeira-forma-normal">Primeira Forma Normal</a>
 - <a href="#segunda-forma-normal">Segunda Forma Normal</a>
+- <a href="#terceira-forma-normal">Terceira Forma Normal</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -262,3 +263,14 @@ O processo deve ser aplicado para eliminar anomalias.
 # <p id="segunda-forma-normal">Segunda Forma Normal</p>
 
 A relação tem todos os seus atributos, fora da chave primária, forem dependentes funcionais totais dela.
+
+# <p id="terceira-forma-normal">Terceira Forma Normal</p>
+
+**Dependência funcioanl transitiva** - Represente a presença de dois atributos que dependem funcionalmente um do outro.
+
+![alt text](public/img/terceiraFN/image1.png)
+
+Para relação estar na terceira forma normal, não deve haver dependência transitiva entre a chave primária
+e os atributos que não pertencem a esta chave.
+
+15:07

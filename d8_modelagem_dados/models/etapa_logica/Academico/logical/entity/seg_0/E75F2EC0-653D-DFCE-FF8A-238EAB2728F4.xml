@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E75F2EC0-653D-DFCE-FF8A-238EAB2728F4" name="Aluno">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>1E3D43E0-08F0-58F9-7B4D-1E4F85DE3BAA</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Matricula" id="5A7224EE-AC6E-E279-A33A-72161B5815C5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>0F92C27D-845C-664C-7534-2E126046D7AB</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nome" id="A31A8870-B89E-64FF-A634-E609EFBB9FF5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>DD92DC4E-50E3-775B-8BDF-22F905EE83AD</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RG" id="311E8DD9-85E6-FE80-7AE2-E434EA85EEBD">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>943140D7-BA02-5B87-943C-14C7F2A8FD73</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Logradouro" id="97B65BD5-4D01-5B2F-9383-309F75DDB4B8">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>3700532F-EEA1-0274-D7F6-0CF2B2E8DE3B</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero" id="406D7C56-544D-6332-6B20-7B64E21564B4">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>DEB28C7B-CB9A-9891-F2EC-C46111863C54</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Complemento" id="3F0A8627-9B9A-B820-DC50-0DF32EA53D8D">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>E331594F-CAC8-ACC3-07C1-3BD61B805416</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Bairro" id="9B6D45A0-C1E6-38DD-B2A7-81F1DA2BC72B">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>66A1E2FF-5F0E-D147-73C6-F2570D27386C</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIdade" id="65BAADF9-D1CC-FBB5-7872-71A10AC3D207">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>592D7304-E3B7-3709-1276-DAB8E2746DD7</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UF" id="88757098-33F3-2AF4-B0F4-FFC7EFBFC090">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>705A8ED7-FD85-5138-EA74-15EA3CD2CC86</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F639B32B-BB93-DC30-896D-5FA0D4BAEB2D" name="Aluno PK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-14 17:03:16 UTC</createdTime>
+<generatorID>7ED17843-204D-D0D1-BDAB-CA513B447F7D</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CD40622E-AB24-244A-2C97-D0049351A1DF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5A7224EE-AC6E-E279-A33A-72161B5815C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

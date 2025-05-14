@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="5901A511-9531-F9CE-D757-6DD9EC9A5911">
+<createdBy>diogomello</createdBy>
+<modifiedBy>diogomello</modifiedBy>
+<createdTime>2025-05-14 16:53:46 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E75F2EC0-653D-DFCE-FF8A-238EAB2728F4" otype="Entity" vid="99EF1DD2-12DE-AAC4-3418-AB12D9F9BE80">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="69" y="70" width="249" height="225"/>
+</OView>
+</objectViews>
+<displays>
+<Display class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Display_1" id="C26D12B4-4A6D-C322-B5E4-E9996E2AA70E">
+<createdBy>diogomello</createdBy>
+<modifiedBy>diogomello</modifiedBy>
+<createdTime>2025-05-14 16:57:13 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>true</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E75F2EC0-653D-DFCE-FF8A-238EAB2728F4" otype="Entity" vid="D6BEEE7E-1BED-313F-3F31-286B0BB1D419">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
+</objectViews>
+</Display>
+<Display class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Display_2" id="8F3AB82B-BE72-6CAA-5F04-5787A025EBEF">
+<createdBy>diogomello</createdBy>
+<modifiedBy>diogomello</modifiedBy>
+<createdTime>2025-05-14 16:58:16 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>true</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E75F2EC0-653D-DFCE-FF8A-238EAB2728F4" otype="Entity" vid="DD509DE6-9E87-C5D9-FEA2-3379EE5E2E46">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
+</objectViews>
+</Display>
+</displays>
+</Diagram>
