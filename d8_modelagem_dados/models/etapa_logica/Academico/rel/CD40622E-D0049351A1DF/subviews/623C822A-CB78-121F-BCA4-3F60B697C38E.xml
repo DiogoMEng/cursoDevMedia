@@ -23,4 +23,14 @@
 <bounds x="409" y="167" width="170" height="110"/>
 </OView>
 </objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3C10C6E0-2E42-6F3E-B0F2-ABEE3C0ABA13" otype="FKIndexAssociation" vid_source="57D1F0F8-AEB5-AF4A-CD3C-ED2CE5201805" vid_target="72BF9541-3F5F-B8F5-9F48-AC295E6FE5CF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="409" y="222"/>
+<point x="267" y="222"/>
+</points>
+</Connector>
+</connectors>
 </Diagram>

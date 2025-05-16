@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16159FD8-B924-8736-F351-28A04FC4E119" name="PessoaFisica">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>87A6FDFE-6D82-1078-C141-D42175C58A00</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_PessoaFisica" id="A8D3E60D-A992-9FE5-D144-AE950AE8859D">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>6269E3A7-87DC-A568-CAE0-ED610F0DC08F</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="99210F1B-F10D-4ACD-1965-DC3D96AB2AF1">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>9AD9E174-64AB-5B7E-E6C8-83857B30A51E</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereço" id="962F5FA3-B57F-5281-DCE7-43B7CF0289D4">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>00A6157C-6027-585A-3688-FE50E51B3193</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cidade" id="20C83C10-8AE6-6D74-7B4A-C891326D53DB">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>D9C51B5C-1022-11EE-DD65-87C62D71F0B9</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="695C504C-482E-2FB2-D3ED-4EECA0F798BF">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>2FE52328-DD88-685F-C97D-6AC34B013274</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Região" id="08E6A414-101E-9A04-A864-A2F6BBED3C9E">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>A637E519-BA07-1AC7-0597-F743988AB7CB</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais" id="A6AD0490-3C58-C7A9-58BB-1C243BADC082">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>FF723A02-C824-6FD3-9BD4-C959040C170A</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8F04299-BE65-DBF7-3477-956150D49F90" name="PessoaFisica_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>4F0E08E6-4815-A726-7181-6310DFBCFB8E</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8D3E60D-A992-9FE5-D144-AE950AE8859D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

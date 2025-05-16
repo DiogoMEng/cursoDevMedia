@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="B346B078-ECC5-E359-9F5C-088F2F1EADD1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-15 17:23:32 UTC</createdTime>
+<ownerDesignName>Depositos</ownerDesignName>
+<engineerTo>
+<item key="807038A9-80D4-149C-BBC4-487B3F4D6248" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>B4195494-F8CA-E102-3A58-73E0BFCE329D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9F5C0E63-6881-5D05-A10B-91088E082979</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>46B91E3F-91EB-2868-DE1A-D940DAACD1B7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -74,23 +74,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CIdade" id="592D7304-E3B7-3709-1276-DAB8E2746DD7">
+<Column name="Locais_idLocal" id="3EBAFD59-7329-E9FB-11D4-78ECBCF0EA50">
 <createdBy>diogomello</createdBy>
-<createdTime>2025-05-14 17:02:57 UTC</createdTime>
+<createdTime>2025-05-15 17:00:37 UTC</createdTime>
 <ownerDesignName>Academico</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="UF" id="705A8ED7-FD85-5138-EA74-15EA3CD2CC86">
-<createdBy>diogomello</createdBy>
-<createdTime>2025-05-14 17:02:57 UTC</createdTime>
-<ownerDesignName>Academico</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C10C6E0-2E42-6F3E-B0F2-ABEE3C0ABA13" referredColumn="084ACE4C-6171-96C7-9D77-BD82ECE856F7"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -103,6 +98,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0F92C27D-845C-664C-7534-2E126046D7AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37E296CF-A98E-60D5-079B-2A2B31BBE409" name="Aluno_Locais_FK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-15 17:00:37 UTC</createdTime>
+<ownerDesignName>Academico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EBAFD59-7329-E9FB-11D4-78ECBCF0EA50"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

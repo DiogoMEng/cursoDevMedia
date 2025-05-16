@@ -14,6 +14,8 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 - <a href="#primeira-forma-normal">Primeira Forma Normal</a>
 - <a href="#segunda-forma-normal">Segunda Forma Normal</a>
 - <a href="#terceira-forma-normal">Terceira Forma Normal</a>
+- <a href="#boyce-codd-forma-normal">Forma Normal Boyce Codd</a>
+- <a href="#outras-formas-normalizacao">Outras Formas Normais e Normalização</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -273,4 +275,8 @@ A relação tem todos os seus atributos, fora da chave primária, forem dependen
 Para relação estar na terceira forma normal, não deve haver dependência transitiva entre a chave primária
 e os atributos que não pertencem a esta chave.
 
-15:07
+# <p id="boyce-codd-forma-normal">Forma Normal Boyce Codd</p>
+
+Uma relação está na BCFN quando estiver na 1FN e todo determinante for chave candidata (Valor que não se repete).
+
+# <p id="outras-formas-normalizacao">Outras Formas Normais e Normalização</p>

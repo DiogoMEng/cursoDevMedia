@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4BD8C0DC-2F23-0681-6E17-AC22004282F5" name="Deposito_ContaCorrente_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>C55BDA0E-A2D3-D90D-E6A6-DA59859064BF</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<containerWithKeyObject>51961D37-3A81-2426-639D-536A4FD8A1C8</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>2B0263A0-5055-9B6C-05D6-FD069DE38201</localFKIndex>
+<keyObject>8F66B83D-A7CB-9445-D9EF-A70F9E9D13F9</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

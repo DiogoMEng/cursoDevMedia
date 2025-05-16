@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8ABA9B4-C476-8271-A0B0-A5A5088EE382" name="Matricula">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Turma_id_Turma" id="5C855772-D930-5B6B-BBF9-2197A9FACC8F">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<delegate>0BF663A0-F996-CA55-DF48-1A8DD7393766</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40AD7F27-901E-8B7A-4E7C-7F89B8044447" referredColumn="0BF663A0-F996-CA55-DF48-1A8DD7393766"/>
+</associations>
+</Column>
+<Column name="PessoaFisica_id_PessoaFisica" id="2B4C7FFD-0730-91D9-9A4E-059BDD8B994C">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<delegate>A8D3E60D-A992-9FE5-D144-AE950AE8859D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC1B6085-774C-6346-9BA3-54B198DB78B2" referredColumn="A8D3E60D-A992-9FE5-D144-AE950AE8859D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="703254FC-EC04-4C1F-A51F-7C71E2499C2D" name="Matricula_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C855772-D930-5B6B-BBF9-2197A9FACC8F"/>
+<colUsage columnID="2B4C7FFD-0730-91D9-9A4E-059BDD8B994C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="768018DC-8D67-5872-86A0-AE58B0543604" name="FK_ASS_1">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>C732D2EA-FDEE-84B5-4264-AD0BFD5D874A</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C855772-D930-5B6B-BBF9-2197A9FACC8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8C9D983-CC84-49DA-4AFF-DD8E3E4C4B09" name="FK_ASS_2">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>C732D2EA-FDEE-84B5-4264-AD0BFD5D874A</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B4C7FFD-0730-91D9-9A4E-059BDD8B994C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

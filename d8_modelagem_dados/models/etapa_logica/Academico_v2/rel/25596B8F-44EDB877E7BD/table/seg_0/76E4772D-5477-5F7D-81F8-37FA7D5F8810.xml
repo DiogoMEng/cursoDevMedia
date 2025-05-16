@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76E4772D-5477-5F7D-81F8-37FA7D5F8810" name="Turma">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>C3463635-6BF5-87F2-16BF-F5A19E863B2D</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Turma" id="0BF663A0-F996-CA55-DF48-1A8DD7393766">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>897AC859-E1F4-5D97-F45B-B04465D95BDB</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Inicio" id="663D0B52-6BBD-16DF-C9FB-DA992BFD4A31">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>B820206D-8558-1561-5421-DEF9BCAC5025</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Fim" id="88C7682D-3088-9F64-74A8-BDF0DC578398">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>FE9428E6-5677-F67F-C2C7-A8D9E5F1D8AB</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Local" id="ED336B9B-1E05-F810-BE0D-8D1D365A06A7">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>3B6E31A6-3D8C-4AA0-639A-B731AD42C637</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02673C75-3FD3-7E14-AF84-1AAB54CC0B2E" name="Turma_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>E05CABFA-3A6A-40FB-F65B-D8550B2A8FDA</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BF663A0-F996-CA55-DF48-1A8DD7393766"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

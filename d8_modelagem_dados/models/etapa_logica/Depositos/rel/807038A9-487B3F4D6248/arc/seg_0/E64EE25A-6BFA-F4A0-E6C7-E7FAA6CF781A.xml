@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="E64EE25A-6BFA-F4A0-E6C7-E7FAA6CF781A" name="FKArc_1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-15 17:24:15 UTC</createdTime>
+<ownerDesignName>Depositos</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>51961D37-3A81-2426-639D-536A4FD8A1C8</table>
+<fkeys>
+<fkeyID>7A2BDEEE-556A-E97A-AD81-EAB438C2A3BD</fkeyID>
+<fkeyID>9B36A534-2D7F-0EE5-17B0-B27B9CBB353E</fkeyID>
+</fkeys>
+</FKArc>

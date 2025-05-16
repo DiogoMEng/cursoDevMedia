@@ -2,4 +2,5 @@
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
    <object objectType="Table" objectID="1E3D43E0-08F0-58F9-7B4D-1E4F85DE3BAA" name="Aluno" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CD40622E-AB24-244A-2C97-D0049351A1DF" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="B2C581A7-7F15-AC62-50DD-CE8386F8BD85" name="Locais" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CD40622E-AB24-244A-2C97-D0049351A1DF" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="3C10C6E0-2E42-6F3E-B0F2-ABEE3C0ABA13" name="Aluno_Locais_FK" seqName="seg_0" containerID="1E3D43E0-08F0-58F9-7B4D-1E4F85DE3BAA" refContainerID="B2C581A7-7F15-AC62-50DD-CE8386F8BD85" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="CD40622E-AB24-244A-2C97-D0049351A1DF" propertySourceId="B2C581A7-7F15-AC62-50DD-CE8386F8BD85" propertyTargetId="1E3D43E0-08F0-58F9-7B4D-1E4F85DE3BAA"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

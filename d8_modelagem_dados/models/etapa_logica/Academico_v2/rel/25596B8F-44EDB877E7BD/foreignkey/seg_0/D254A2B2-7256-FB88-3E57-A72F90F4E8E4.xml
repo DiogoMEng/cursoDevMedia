@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D254A2B2-7256-FB88-3E57-A72F90F4E8E4" name="VendaBalcaoCurso_Turma_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>C594CCAC-F0B5-9672-D641-0798FE39EE15</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<containerWithKeyObject>262AADD7-7018-8481-97F7-612A560D9340</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>19261D76-F322-734B-639D-6E954F719DCE</localFKIndex>
+<keyObject>02673C75-3FD3-7E14-AF84-1AAB54CC0B2E</keyObject>
+<mandatory>false</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

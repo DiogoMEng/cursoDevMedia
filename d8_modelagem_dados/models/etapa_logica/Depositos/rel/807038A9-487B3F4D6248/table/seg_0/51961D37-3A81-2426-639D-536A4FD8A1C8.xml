@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51961D37-3A81-2426-639D-536A4FD8A1C8" name="Deposito">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>4E0168CB-B201-7C38-EA71-FFEF2BAD96A6</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idDeposito" id="8F18B5BE-2E0D-1A2A-2BD1-FC1198F7C1F4">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>6506E4A4-94DF-0B19-DBEE-69F36CF80969</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Deposito" id="A9A32C65-456C-745F-6F9C-C0738BBA06A0">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>311F2D25-7AB6-802D-2897-22D42BC283CA</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="0F0C06E6-D6F7-B905-7EFE-9A6ECDDCC579">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>C26030E3-68E4-2ACA-E477-5056AC5F85D7</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conciliado" id="5FFA2EAA-5409-875C-18A0-2D8A76AB3767">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>02D44BC4-6327-FE3B-9BFE-657D15DA84A4</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CartaoCredito_id_CartaoCredito" id="FF62A8B3-CD4B-929D-2837-AC3DFF6782D8">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>F602F480-D9A7-562B-2A7F-7787CD703987</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<delegate>A20DD10E-428D-DC8D-121A-A43BF9A7B511</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B171EF2-139B-7C78-A152-A8E6C1DD44BD" referredColumn="A20DD10E-428D-DC8D-121A-A43BF9A7B511"/>
+</associations>
+</Column>
+<Column name="ContaCorrente_id_CCorrente" id="B9880169-2C15-B192-6A50-C5F4E1258445">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>F332EFF5-E150-E250-45BF-D8E4B3AB8754</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<delegate>B0DA1E5A-3600-0F2B-85D4-C49DAD7E0765</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BD8C0DC-2F23-0681-6E17-AC22004282F5" referredColumn="B0DA1E5A-3600-0F2B-85D4-C49DAD7E0765"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="514965CB-5D73-2617-870B-202FD9AEF053" name="Deposito_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>C0893A6F-E296-A9CD-07D1-FF5C020E12CF</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F18B5BE-2E0D-1A2A-2BD1-FC1198F7C1F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B0263A0-5055-9B6C-05D6-FD069DE38201" name="Deposito_ContaCorrente_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>C55BDA0E-A2D3-D90D-E6A6-DA59859064BF</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9880169-2C15-B192-6A50-C5F4E1258445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E20CC57E-D87A-93F4-C74C-8C83E63DBB35" name="Deposito_CartaoCredito_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 16:37:16 UTC</createdTime>
+<generatorID>D530C1CD-F287-ED9E-BCF3-E168E862F51D</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF62A8B3-CD4B-929D-2837-AC3DFF6782D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

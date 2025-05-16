@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAA22E25-A18E-9DD6-1840-FA2E90280F87" name="VendaBalcao">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>D2A95227-7790-F4E5-8A34-EE3BB769EE21</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_VendaBalcao" id="1FBFE6D0-362E-BA4E-CA93-EE95B477510F">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>A26B7706-CA3B-D383-2A14-193A7E37C936</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total_Venda" id="333ED607-7B28-8DF9-A3A5-C2E3BB2BF153">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>782235F7-CECA-10D9-1C9A-D1FE8F13F432</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Venda" id="73F1D32E-FA61-C65A-BD22-78A913D276AD">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>075B3EB8-D6BE-C412-3CFE-D7AF75531A86</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PessoaFisica_id_PessoaFisica" id="4E44F9ED-5D79-928C-BE90-46C2EA8D3E3E">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>05BF7560-DFF4-BC0E-B317-5B067C7A974A</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<delegate>A8D3E60D-A992-9FE5-D144-AE950AE8859D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF14178D-DD38-B642-6E59-F4DA17BF7C8A" referredColumn="A8D3E60D-A992-9FE5-D144-AE950AE8859D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DE2C75F-EE7E-5B63-5A35-EFE086FA7CA4" name="VendaBalcao_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>F0FA1A3F-946F-066B-A327-B7AE5DB990F3</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FBFE6D0-362E-BA4E-CA93-EE95B477510F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A203CF7-230B-3790-B215-9E3594432E1E" name="VendaBalcao_PessoaFisica_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>7CAF562D-76B5-CC5A-5484-9CF4B9772517</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E44F9ED-5D79-928C-BE90-46C2EA8D3E3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="848844CD-4699-2676-04C3-F260972D3175" name="VendaBalcaoCurso_PessoaFisica_FK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-04-08 19:40:23 UTC</createdTime>
+<generatorID>6C82982C-EC15-236C-9B6C-DAA76710C33D</generatorID>
+<ownerDesignName>Academico</ownerDesignName>
+<containerWithKeyObject>262AADD7-7018-8481-97F7-612A560D9340</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>77F0A436-6E87-2828-8D1F-2FDEB55EF119</localFKIndex>
+<keyObject>F8F04299-BE65-DBF7-3477-956150D49F90</keyObject>
+<mandatory>false</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

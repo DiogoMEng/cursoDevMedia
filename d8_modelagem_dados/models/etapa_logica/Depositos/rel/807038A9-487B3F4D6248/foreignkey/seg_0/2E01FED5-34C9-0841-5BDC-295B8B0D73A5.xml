@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2E01FED5-34C9-0841-5BDC-295B8B0D73A5" containerWithKeyObject="2C3B9428-4F28-5EA2-9898-430482B7B5E5" localFKIndex="D9A2E0BE-AC82-0982-9FDD-EFBD3F751C35" name="Deposito_cartaoCredito_CartaoCredito_FK">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-15 17:24:15 UTC</createdTime>
+<generatorID>B346B078-ECC5-E359-9F5C-088F2F1EADD1</generatorID>
+<ownerDesignName>Depositos</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1313BC11-1BF4-CE32-7846-2CF614854C52</referredTableID>
+<keyObject>D752DCA5-C790-1470-6947-BAB9E3C37146</keyObject>
+<referredKeyID>D752DCA5-C790-1470-6947-BAB9E3C37146</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
