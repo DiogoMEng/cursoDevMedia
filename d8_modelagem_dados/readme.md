@@ -16,6 +16,7 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 - <a href="#terceira-forma-normal">Terceira Forma Normal</a>
 - <a href="#boyce-codd-forma-normal">Forma Normal Boyce Codd</a>
 - <a href="#outras-formas-normalizacao">Outras Formas Normais e Normalização</a>
+- <a href="#estudo-caso-logica">Estudo de Caso</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -280,3 +281,22 @@ e os atributos que não pertencem a esta chave.
 Uma relação está na BCFN quando estiver na 1FN e todo determinante for chave candidata (Valor que não se repete).
 
 # <p id="outras-formas-normalizacao">Outras Formas Normais e Normalização</p>
+
+**Dependência funcional multivalorada** - quando temos mais de um atributo, dependente de um único atributo na tabela.
+
+Para estar na 4FN, não deve haver na relação mais de uma dependência funcional multivalorada.
+
+> OBS: Problemas de normalização violando as formas Boyce-Codd, quarta e quinta geralmente estão associadas a relacionamentos N:M.
+
+**Forma Normal de Projeção/Junção** (5FN) - Dependência Funcional de Junção.
+
+| Resumo Geral sobre Formas Normais |                     |
+|-----------------------------------|---------------------|
+| `1ª FN` | Elimina Atributos Multivalorados              |
+| `2ª FN` | Chaver compostas; Dependência funcional total |
+| `3ª FN` | Dependências funcionais transitivas           |
+
+# <p id="estudo-caso-logica">Estudo de Caso</p>
+
+![alt text](public/img/estudoCasoLogico/image1.png)
+
