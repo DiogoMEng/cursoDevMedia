@@ -300,3 +300,4 @@ Para estar na 4FN, não deve haver na relação mais de uma dependência funcion
 
 ![alt text](public/img/estudoCasoLogico/image1.png)
 
+14:11
