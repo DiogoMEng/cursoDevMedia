@@ -18,6 +18,8 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 - <a href="#outras-formas-normalizacao">Outras Formas Normais e Normalização</a>
 - <a href="#estudo-caso-logica">Estudo de Caso</a>
 
+Parte 4: <a href="#introducao-etapa-fisica-modelagem-dados">Modelagem de Dados: Etapa Física</a>
+
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
 **Estilos Básicos de Modelos de Dados**:
@@ -300,4 +302,7 @@ Para estar na 4FN, não deve haver na relação mais de uma dependência funcion
 
 ![alt text](public/img/estudoCasoLogico/image1.png)
 
-14:11
+---
+
+# <p id="introducao-etapa-fisica-modelagem-dados">Modelagem de Dados: Etapa Física</p>
+
