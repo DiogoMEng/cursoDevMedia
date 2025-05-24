@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AADBF25C-F59B-DA22-1107-6F6A77D33FDB" name="Produto">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>F8DEF14E-2BED-A9E5-6EB4-5ECC7E18898D</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdProduto" id="430D56D0-7EDA-78B1-25E2-9A3B40A92C5B">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>16F0610A-F787-5389-8136-7D96D3BF8F51</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="42D280C0-D9BD-904F-241A-0C4975CC942E">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>BF2581A5-A68A-8DC4-F1D1-3F5901322999</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="2034C12F-C2A9-2B71-97BB-8CEBD59569D5">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<comment>higiene pessoal, medicamento, beleza, infantil</comment>
+<generatorID>AFF1A13F-2E25-8D44-FCBF-B6E7605205EA</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descrição" id="5A456807-14A6-4BF4-3650-D90FB4DA9C41">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>DF6215F1-26D9-7EA2-A071-416E738AD4F4</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Preco" id="2A9B7D36-9417-72CF-F6D7-150419F3184C">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>7FDA318A-3866-40F0-6CE5-A364CC935A32</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65EC9022-CF5D-7A12-A56F-92E2F281C258" name="Produto_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>520EA783-E2FB-3605-0C6E-0330C6E9122C</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="430D56D0-7EDA-78B1-25E2-9A3B40A92C5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

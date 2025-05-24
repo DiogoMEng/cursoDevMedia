@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Cliente" directorySegmentName="seg_0" id="A322C040-4C89-75FA-8A63-AF9ADA3CD8FA">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Endereço*" id="165C268B-E695-9F5C-0FB5-92B4A1334DC5">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NumCelular" id="46759DEF-C6E9-8082-8963-C344767D5D3F">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CPF" id="8561DF30-3B1C-17DC-79A3-5AF2AE34C6BA">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nome" id="894382C3-E78C-79E8-8D50-EFF0193911D8">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Telefones*" id="9812900D-241F-647B-E1EE-CCF54AF418E2">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Cliente_PK" id="A434DE84-107D-7AED-FFF7-46DE3AF10DCA">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

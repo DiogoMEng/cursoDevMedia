@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Farmacia" directorySegmentName="seg_0" id="181D18B0-1DC8-D812-67FD-E18A0D69A30C">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RazaoSocial" id="1745146D-3C99-E001-FC1B-A7B1CB12FEF8">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CGC" id="6E53196A-CE92-FD74-EC53-7FF48637A16A">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Farmacia_ID" id="9A48E22B-CD10-982C-06E6-EDD44B76D8F7">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Farmacia_PK" id="C315FC28-24F0-ADED-0435-39A2FC1BC0A3">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

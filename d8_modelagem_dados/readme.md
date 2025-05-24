@@ -19,6 +19,7 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 - <a href="#estudo-caso-logica">Estudo de Caso</a>
 
 Parte 4: <a href="#introducao-etapa-fisica-modelagem-dados">Modelagem de Dados: Etapa Física</a>
+- <a href="#consideracoes-seguranca">Considerações sobre Segurança</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
@@ -306,3 +307,24 @@ Para estar na 4FN, não deve haver na relação mais de uma dependência funcion
 
 # <p id="introducao-etapa-fisica-modelagem-dados">Modelagem de Dados: Etapa Física</p>
 
+**Pontos importantes da Etapa**:
+1. Restrições de integridade.
+2. Considerações sobre desnormalização.
+3. Dicionário de Dados.
+4. Volumetria.
+5. Segurança.
+
+Campos de tabelas precisam ter seus domínios de valores delimitados por tipos e tamanhos.
+- exemplos: char, varchar2, date, integer e CLOB.
+
+**Soluções programadas**:
+- Stored Procedures - rotinas que podem receber vários argumentos.
+- Função.
+- Triggers - porção de código que é executado em decorrência de CRUD.
+
+# <p id="consideracoes-seguranca">Considerações sobre Segurança</p>
+
+| **Mecanismos de Proteção** |
+|----------------------------|
+
+**Visões** - filtragem de dados para determinados usuários.

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14588E5F-9EC5-4673-5276-7A228C3CCCDA" name="Fornece">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<ordsAlias>fornecev1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Produto_IdProduto" id="852EECB4-0206-73CB-9095-167B144341A5">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2902201-330B-D0A7-132D-8631BF56B5C7" referredColumn="430D56D0-7EDA-78B1-25E2-9A3B40A92C5B"/>
+</associations>
+</Column>
+<Column name="Filial_idFilial" id="DF3E857A-9E9C-E7BC-FA34-C3A6665FD438">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD3322A4-61B9-C712-39CA-F2C118C217EB" referredColumn="464AF357-182E-C0E4-18E2-103B134D400A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEE6D7BA-8A85-6FD5-99B3-1453982B92C0" name="Fornecev1_PK">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="852EECB4-0206-73CB-9095-167B144341A5"/>
+<colUsage columnID="DF3E857A-9E9C-E7BC-FA34-C3A6665FD438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD2B8C14-DCC1-1F4D-50CC-24DDF4AF98BE" name="FK_ASS_9">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="852EECB4-0206-73CB-9095-167B144341A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40323D71-91B9-A25B-6333-C193DB4EBAD6" name="FK_ASS_10">
+<createdBy>Eduardo</createdBy>
+<createdTime>2015-05-13 17:18:09 UTC</createdTime>
+<generatorID>FFE233F0-F656-8045-11C2-EE23FD018F17</generatorID>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF3E857A-9E9C-E7BC-FA34-C3A6665FD438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

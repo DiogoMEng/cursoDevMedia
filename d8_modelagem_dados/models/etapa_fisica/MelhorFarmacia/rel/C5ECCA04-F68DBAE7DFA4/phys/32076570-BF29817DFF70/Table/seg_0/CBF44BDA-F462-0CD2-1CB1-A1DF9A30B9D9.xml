@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Promove" directorySegmentName="seg_0" id="CBF44BDA-F462-0CD2-1CB1-A1DF9A30B9D9">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Filial_idFilial" id="4B0C5CC6-9A6E-CDFC-5A57-29DD41F487D1">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Produto_IdProduto" id="E228C760-C07B-2FE9-A061-994AF39D41B0">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ASS_13" id="C6777813-02CB-8047-91D7-5E0FC110E956">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ASS_12" id="C9BE54E6-70CC-A2DD-1C69-DC1054B8B2B0">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Promove_PK" id="9E570DBA-473E-27F8-961B-EFB6C9612123">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 16:53:13 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

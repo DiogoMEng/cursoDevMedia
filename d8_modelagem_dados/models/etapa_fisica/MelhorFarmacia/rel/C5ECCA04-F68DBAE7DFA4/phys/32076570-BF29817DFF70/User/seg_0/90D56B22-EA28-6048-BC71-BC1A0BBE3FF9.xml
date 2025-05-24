@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="Limitado" directorySegmentName="seg_0" id="90D56B22-EA28-6048-BC71-BC1A0BBE3FF9">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 17:41:52 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<identifier>05A7094246F6E84D8475D7D1ACC012D41F</identifier>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="A7D02122-8F13-B384-5B2D-BFF013F34E5D">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 17:42:26 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<privileges>SELECT</privileges>
+<view>24932738-696C-74A2-5DCA-CC92ACDCB8C0</view>
+</Permission>
+</permissions>
+</UserOraclev10g>

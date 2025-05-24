@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="24932738-696C-74A2-5DCA-CC92ACDCB8C0" name="VClientes">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 17:34:12 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT Cliente.CPF, Cliente.Nome FROM Cliente</userDefinedSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container containerID="A322C040-4C89-75FA-8A63-AF9ADA3CD8FA"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CPF" id="28A60635-4BFA-9D96-4002-C458D48403EA">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 17:39:56 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (14 CHAR)</dataType>
+<reference>false</reference>
+<referencedColumn>8561DF30-3B1C-17DC-79A3-5AF2AE34C6BA</referencedColumn>
+<table>A322C040-4C89-75FA-8A63-AF9ADA3CD8FA</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Nome" id="197BEF8D-4D87-9544-30CB-C641C970D992">
+<createdBy>diogomello</createdBy>
+<createdTime>2025-05-24 17:39:56 UTC</createdTime>
+<ownerDesignName>MelhorFarmacia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (100 CHAR)</dataType>
+<reference>false</reference>
+<referencedColumn>894382C3-E78C-79E8-8D50-EFF0193911D8</referencedColumn>
+<table>A322C040-4C89-75FA-8A63-AF9ADA3CD8FA</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A322C040-4C89-75FA-8A63-AF9ADA3CD8FA">
+<container>true</container>
+<tableName>Cliente</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8561DF30-3B1C-17DC-79A3-5AF2AE34C6BA">
+<columnName>CPF</columnName>
+<tableName>Cliente</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="894382C3-E78C-79E8-8D50-EFF0193911D8">
+<columnName>Nome</columnName>
+<tableName>Cliente</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>
