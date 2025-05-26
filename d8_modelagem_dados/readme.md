@@ -20,6 +20,7 @@ Parte 3: <a href="#introducao-etapa-logica-modelagem-dados">Modelagem de Dados: 
 
 Parte 4: <a href="#introducao-etapa-fisica-modelagem-dados">Modelagem de Dados: Etapa Física</a>
 - <a href="#consideracoes-seguranca">Considerações sobre Segurança</a>
+- <a href="#consideracoes-finais">Considerações Finais</a>
 
 # <p id="conceitos-modelagem">Conceitos Inicias de Modelagem de Dados</p>
 
